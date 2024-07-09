@@ -1,0 +1,31 @@
+﻿<Window x:Class="LearningWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearningWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1200">
+    <Grid>
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave"
+            x:Name="Button1"
+            Content="Test"
+            FontWeight="Bold" Margin="34,13,1058,647">
+        </Button>
+
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave"
+            x:Name="Button2"
+            Content="Test"
+            FontWeight="Bold" Margin="34,76,1058,584">
+        </Button>
+
+        <TextBlock Margin="140,498,140,43"
+            x:Name="mainText"
+            FontWeight="DemiBold"
+            FontSize="15"
+            Foreground="Black"
+            Visibility="Visible"
+            Text=""
+            TextWrapping="Wrap"/>
+    </Grid>
+</Window>
