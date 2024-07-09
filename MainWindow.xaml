@@ -6,26 +6,37 @@
         xmlns:local="clr-namespace:LearningWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="720" Width="1200">
-    <Grid>
+    <Canvas Height="720" Width="1200">
         <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave"
-            x:Name="Button1"
-            Content="Test"
-            FontWeight="Bold" Margin="34,13,1058,647">
+                x:Name="Button1"
+                Height="35"
+                Width="105"
+                Content="Test"
+                FontWeight="Bold"
+                Canvas.Top="14"
+                Canvas.Left="15">
+
         </Button>
 
         <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave"
-            x:Name="Button2"
-            Content="Test"
-            FontWeight="Bold" Margin="34,76,1058,584">
+                x:Name="Button2"
+                Height="35"
+                Width="105"
+                Content="Test"
+                FontWeight="Bold"
+                Canvas.Top="54"
+                Canvas.Left="15">
         </Button>
-
-        <TextBlock Margin="140,498,140,43"
+        <TextBlock 
             x:Name="mainText"
-            FontWeight="DemiBold"
-            FontSize="15"
-            Foreground="Black"
-            Visibility="Visible"
+            Height="145"
+            Width="935"
             Text=""
-            TextWrapping="Wrap"/>
-    </Grid>
+            FontWeight="DemiBold"
+            FontSize="16"
+            TextWrapping="Wrap"
+            Canvas.Bottom="55"
+            Canvas.Left="135"
+            />
+    </Canvas>
 </Window>
