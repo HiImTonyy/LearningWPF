@@ -27,7 +27,7 @@ namespace LearningWPF
             InitializeComponent();
         }
 
-        private void Hyperlink_ClickButton(object sender, RoutedEventArgs e)
+        private async void Hyperlink_ClickButton(object sender, RoutedEventArgs e)
         {
             if (isDead == false) { piss.FontSize += 1; }
 
@@ -65,7 +65,36 @@ namespace LearningWPF
                 Text4.FontSize = 17;
                 Text5.FontSize = 17;
                 Text6.FontSize = 17;
+                SpookyThing();
             }
+        }
+        public async void SpookyThing()
+        {
+            while (piss.FontSize < 20)
+            {
+                await Task.Delay(50);
+
+                piss.FontSize ++;
+                Text1.FontSize ++;
+                Text2.FontSize ++;
+                Text3.FontSize ++;
+                Text4.FontSize ++;
+                Text5.FontSize ++;
+                Text6.FontSize ++;
+            }
+            while (piss.FontSize > 17)
+            {
+                await Task.Delay(50);
+
+                piss.FontSize--;
+                Text1.FontSize--;
+                Text2.FontSize--;
+                Text3.FontSize--;
+                Text4.FontSize--;
+                Text5.FontSize--;
+                Text6.FontSize--;
+            }
+            SpookyThing();
         }
     }
 }
