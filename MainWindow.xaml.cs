@@ -41,10 +41,7 @@ namespace LearningWPF
                     mainText.Text = "I learned about the many different types of XAML 'code' that you can use to spice up the textblocks. I guess me learning about HTML and CSS all those months ago didn't go to waste!";
                     break;
                 case "Button2":
-                    mainText.Text = "It's been practically a month since I last did anything according to my GitHub, but I've actually been working on a typing test here and there. not EVERYDAY mind you, but... yeah. I thought it " +
-                        "would be easy, but it isn't really. I got the coloring down, so when you type a wrong character, then the word turns red. I also have it randomly generate words and also made it so that you HAVE to type the word correctly, " +
-                        "but.. yeah. I wanted it in a specific way, but got a tad bit over-whelemed. this is more so for myself in the future because I doubt anyone will see this, but.. eh, if you are some recuriter then I hope you have a pretty good " +
-                        "day. life is a big o'l bitch at times, but you gotta keep your head held high and move forward. light will always appear in the dark eventually and you just gotta move ahead to find it. believe, and you will succeed!";
+                    mainText.Text = "I created a simple skill-check thing for the fun of it.";
                     break;
             }
         }
@@ -60,36 +57,10 @@ namespace LearningWPF
             button1_LearningTextblocks.ShowDialog();
         }
 
-        private void Needle_Reset(object sender, RoutedEventArgs e)
+        private void Button2_Click(object sender, RoutedEventArgs e)
         {
-            Background = Brushes.White;
-            successBorderStart = 4.4;
-            successBorderEnd = 4.4;
-            needleStart = 1.1;
-            needleEnd = 1.1;
-        }
-
-        private void NeedleChecker_Click(object sender, RoutedEventArgs e)
-        {
-            if (needleStart >= successBorderStart && needleStart <= successBorderEnd)
-            {
-                Background = Brushes.AliceBlue;
-            }
-        }
-
-        public void setNeedleSuccess_Click(object sender, RoutedEventArgs e)
-        {
-            successBorderStart = 4.4;
-            successBorderEnd = 7.5;
-            needleStart = 4.9;
-            needleEnd = 7.2;
+            Button2_SkillCheck button2_SkillCheck = new Button2_SkillCheck();
+            button2_SkillCheck.ShowDialog();
         }
     }
-
-
-    /*      successBorderStart = Canvas.GetLeft(successZone);
-            successBorderEnd = successBorderStart + successZone.ActualWidth;
-            needleStart = Canvas.GetLeft(needle);
-            needleEnd = needleStart + needle.ActualWidth;
-    */
 }

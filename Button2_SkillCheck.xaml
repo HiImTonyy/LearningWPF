@@ -1,0 +1,55 @@
+﻿<Window x:Class="LearningWPF.Button2_SkillCheck"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearningWPF"
+        mc:Ignorable="d"
+        Title="Button2_SkillCheck" Height="620" Width="1180">
+    <Canvas>
+        <!--Bar-->
+        <Border 
+            Background="Black"
+            Height="25"
+            Width="355"
+            Canvas.Top="455"
+            Canvas.Left="455"/>
+        <!--Needle-->
+        <Border
+            x:Name="needle"
+            Background="White"
+            Height="25"
+            Width="5"
+            Canvas.Top="455"
+            Canvas.Left="455"/>
+        <!--Success Zone-->
+        <Border
+            x:Name="successZone"
+            Background="LightGreen"
+            Height="25"
+            Width="25"
+            Canvas.Top="455"
+            Canvas.Left="555"/>
+        <Button Click="NeedleChecker_Click"
+            x:Name="Needle"
+            Height="25"
+            Width="85"
+            Canvas.Top="495"
+            Canvas.Left="525"
+            Content="Check Needle"/>
+        <Button Click="Needle_Reset"
+            x:Name="NeedleReseter"
+            Height="25"
+            Width="85"
+            Canvas.Top="495"
+            Canvas.Left="655"
+            Content="Reset Needle"/>
+        <Button Click="setNeedleSuccess_Click"
+            x:Name="setNeedleSuccess"
+            Height="25"
+            Width="185"
+            Canvas.Top="525"
+            Canvas.Left="545"
+            Content="Set Needle To Success Zone"/>
+    </Canvas>
+</Window>

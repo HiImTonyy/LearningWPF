@@ -19,11 +19,11 @@
 
         </Button>
 
-        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave"
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button2_Click"
                 x:Name="Button2"
                 Height="35"
                 Width="135"
-                Content="Test"
+                Content="2. Skill Check"
                 FontWeight="Bold"
                 Canvas.Top="54"
                 Canvas.Left="15">
@@ -39,49 +39,5 @@
             Canvas.Bottom="55"
             Canvas.Left="170"
             />
-        <!--Bar-->
-        <Border 
-            Background="Black"
-            Height="25"
-            Width="355"
-            Canvas.Top="455"
-            Canvas.Left="455"/>
-        <!--Needle-->
-        <Border
-            x:Name="needle"
-            Background="White"
-            Height="25"
-            Width="5"
-            Canvas.Top="455"
-            Canvas.Left="455"/>
-        <!--Success Zone-->
-        <Border
-            x:Name="successZone"
-            Background="LightGreen"
-            Height="25"
-            Width="25"
-            Canvas.Top="455"
-            Canvas.Left="555"/>
-        <Button Click="NeedleChecker_Click"
-            x:Name="Needle"
-            Height="25"
-            Width="85"
-            Canvas.Top="495"
-            Canvas.Left="525"
-            Content="Check Needle"/>
-        <Button Click="Needle_Reset"
-            x:Name="NeedleReseter"
-            Height="25"
-            Width="85"
-            Canvas.Top="495"
-            Canvas.Left="655"
-            Content="Reset Needle"/>
-        <Button Click="setNeedleSuccess_Click"
-            x:Name="setNeedleSuccess"
-            Height="25"
-            Width="185"
-            Canvas.Top="525"
-            Canvas.Left="545"
-            Content="Set Needle To Success Zone"/>
     </Canvas>
 </Window>
