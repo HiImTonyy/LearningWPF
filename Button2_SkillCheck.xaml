@@ -7,8 +7,20 @@
         mc:Ignorable="d"
         Title="Button2_SkillCheck" Height="620" Width="1180">
     <Canvas>
+        <TextBlock 
+            x:Name="endSkillPopup"
+            Visibility="Hidden"
+            Text="'Murica!"
+            FontSize="63"
+            FontWeight="Bold"
+            Foreground="Black"
+            Canvas.Left="315"
+            Canvas.Top="195"
+            >
+        </TextBlock>
         <!--Bar-->
         <Border 
+            x:Name="mainSkillBar"
             Background="Black"
             Height="25"
             Width="355"
@@ -21,7 +33,8 @@
             Height="25"
             Width="5"
             Canvas.Top="455"
-            Canvas.Left="455"/>
+            Canvas.Left="455"
+            Panel.ZIndex="1"/>
         <!--Success Zone-->
         <Border
             x:Name="successZone"
@@ -30,13 +43,6 @@
             Width="25"
             Canvas.Top="455"
             Canvas.Left="555"/>
-        <Button Click="NeedleChecker_Click"
-            x:Name="Needle"
-            Height="25"
-            Width="85"
-            Canvas.Top="495"
-            Canvas.Left="525"
-            Content="Check Needle"/>
         <Button Click="Needle_Reset"
             x:Name="NeedleReseter"
             Height="25"
@@ -44,12 +50,12 @@
             Canvas.Top="495"
             Canvas.Left="655"
             Content="Reset Needle"/>
-        <Button Click="setNeedleSuccess_Click"
-            x:Name="setNeedleSuccess"
+        <Button Click="StartSkillCheck" PreviewKeyDown="runSkillCheck_PreviewKeyDown"
+            x:Name="runSkillCheck"
             Height="25"
-            Width="185"
-            Canvas.Top="525"
-            Canvas.Left="545"
-            Content="Set Needle To Success Zone"/>
+            Width="95"
+            Canvas.Top="395"
+            Canvas.Left="555"
+            Content=" Start Skill Check"/>
     </Canvas>
 </Window>

@@ -22,43 +22,66 @@ namespace LearningWPF
         public Button2_SkillCheck()
         {
             InitializeComponent();
+            SetupBar();
         }
 
-        double successBorderStart = 4.4;
-        double successBorderEnd = 4.4;
-        double needleStart = 1.1;
-        double needleEnd = 1.1;
+        double successBorderStart { get; set; }
+        double successBorderEnd { get; set; }
+        double needleStart { get; set; }
+        double needleEnd { get; set; }
+        double barStart { get; set; }
+        bool spacebarPressed { get; set; }
+     
 
-        private void Needle_Reset(object sender, RoutedEventArgs e)
+        public double needleStartupStart = 0.0;
+        public double needleStartupEnd = 0.0;
+
+        void SetupBar()
         {
-            Background = Brushes.White;
-            successBorderStart = 4.4;
-            successBorderEnd = 4.4;
-            needleStart = 1.1;
-            needleEnd = 1.1;
+            barStart = Canvas.GetLeft(mainSkillBar);
         }
 
-        private void NeedleChecker_Click(object sender, RoutedEventArgs e)
+        public void Needle_Reset(object sender, RoutedEventArgs e)
         {
-            if (needleStart >= successBorderStart && needleStart <= successBorderEnd)
-            {
-                Background = Brushes.AliceBlue;
-            }
-        }
-
-        public void setNeedleSuccess_Click(object sender, RoutedEventArgs e)
-        {
-            successBorderStart = 4.4;
-            successBorderEnd = 7.5;
-            needleStart = 4.9;
-            needleEnd = 7.2;
-        }
-    }
-
-
-    /*      successBorderStart = Canvas.GetLeft(successZone);
+            Canvas.SetLeft(needle, barStart);
+            successBorderStart = Canvas.GetLeft(successZone);
             successBorderEnd = successBorderStart + successZone.ActualWidth;
             needleStart = Canvas.GetLeft(needle);
             needleEnd = needleStart + needle.ActualWidth;
-    */
+            spacebarPressed = false;
+            Background = Brushes.White;
+            endSkillPopup.Visibility = Visibility.Hidden;
+        }
+
+        public async void StartSkillCheck(object sender, RoutedEventArgs e)
+        {
+            while (spacebarPressed == false)
+            {
+                Dispatcher.Invoke(() => Canvas.SetLeft(needle, Canvas.GetLeft(needle) + 2.2));
+                await Task.Delay(25);
+            }
+            successBorderStart = Canvas.GetLeft(successZone);
+            successBorderEnd = successBorderStart + successZone.ActualWidth;
+            needleStart = Canvas.GetLeft(needle);
+            needleEnd = needleStart + needle.ActualWidth;
+
+            if (needleStart >= successBorderStart && needleStart <= successBorderEnd)
+            {
+                Background = Brushes.Blue;
+                endSkillPopup.Visibility = Visibility.Visible;
+                endSkillPopup.Text = "You've got skills!";
+            }
+            else
+            {
+                Background = Brushes.Red;
+                endSkillPopup.Visibility = Visibility.Visible;
+                endSkillPopup.Text = "You've got no skills!";
+            }
+        }
+
+        private void runSkillCheck_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Space) { spacebarPressed = true; }
+        }
+    }
 }
