@@ -1,0 +1,31 @@
+﻿<Window x:Class="LearningWPF.Button1_LearningTextblocks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearningWPF"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Button1_LearningTextblocks" Height="620" Width="1180">
+    <StackPanel Width="250" VerticalAlignment="Center">
+        <TextBlock>I <Bold>don't</Bold> even <Italic>know.</Italic>
+            <LineBreak/>
+            <Bold><Italic>it is what it is.</Italic></Bold>
+        </TextBlock>
+        <TextBlock TextTrimming="CharacterEllipsis" Foreground="DarkOrange">
+            Piss.
+        </TextBlock>
+        <TextBlock TextWrapping="Wrap" Foreground="BlueViolet">
+            I have no idea what I'm going to eat today.
+        </TextBlock>
+        <TextBlock FontSize="9"  FontWeight="UltraBlack" Foreground="Crimson">
+            I've been meditating an hour a day for 78 days straight.
+        </TextBlock>
+        <TextBlock FontSize="8"  FontWeight="DemiBold" Foreground="Blue">
+            "I'm hungry, I'm hungry, I'm bored, chase chase chase!"
+        </TextBlock>
+        <TextBlock FontSize="9" Foreground="DarkBlue" FontWeight="DemiBold">
+            "You get it now!"
+        </TextBlock>
+    </StackPanel>
+</Window>

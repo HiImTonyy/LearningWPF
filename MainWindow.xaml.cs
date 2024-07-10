@@ -21,7 +21,6 @@ namespace LearningWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        bool turnTextOn = false;
         public MainWindow()
         {
             InitializeComponent();
@@ -34,8 +33,7 @@ namespace LearningWPF
             switch(button.Name)
             {
                 case "Button1":
-                    mainText.Text = "This is just random text to show the description of whatever it is I'll be learning. I've noticed that in some things they ask you to do this and that, then erase the file and start a new one." +
-                        " I hate that so I'm doing a proper menu where you can click on a specific thing I learned.. so once you click on the button, it'll open up a new window. CRAZY.";
+                    mainText.Text = "I learned about the many different types of XAML 'code' that you can use to spice up the textblocks. I guess me learning about HTML and CSS all those months ago didn't go to waste!" ;
                     break;
                 case "Button2":
                     mainText.Text = "It's been practically a month since I last did anything according to my GitHub, but I've actually been working on a typing test here and there. not EVERYDAY mind you, but... yeah. I thought it " +
@@ -49,6 +47,12 @@ namespace LearningWPF
         private void Grid_MouseLeave(object sender, MouseEventArgs e)
         {
             mainText.Visibility = Visibility.Hidden;
+        }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            Button1_LearningTextblocks button1_LearningTextblocks = new Button1_LearningTextblocks();
+            button1_LearningTextblocks.ShowDialog();
         }
     }
 }

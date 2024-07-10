@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LearningWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1200">
-    <Canvas Height="720" Width="1200">
-        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="720" Width="1280">
+    <Canvas Height="720" Width="1280">
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button1_Click"
                 x:Name="Button1"
                 Height="35"
-                Width="105"
-                Content="Test"
+                Width="135"
+                Content="1. Learning Textblocks"
                 FontWeight="Bold"
                 Canvas.Top="14"
                 Canvas.Left="15">
@@ -21,7 +22,7 @@
         <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave"
                 x:Name="Button2"
                 Height="35"
-                Width="105"
+                Width="135"
                 Content="Test"
                 FontWeight="Bold"
                 Canvas.Top="54"
@@ -36,7 +37,7 @@
             FontSize="16"
             TextWrapping="Wrap"
             Canvas.Bottom="55"
-            Canvas.Left="135"
+            Canvas.Left="170"
             />
     </Canvas>
 </Window>
