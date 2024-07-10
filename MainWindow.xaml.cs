@@ -25,15 +25,20 @@ namespace LearningWPF
         {
             InitializeComponent();
         }
+
+        double successBorderStart = 4.4;
+        double successBorderEnd = 4.4;
+        double needleStart = 1.1;
+        double needleEnd = 1.1;
         private void Grid_MouseEnter(object sender, MouseEventArgs e)
         {
             var button = sender as Button;
             mainText.Visibility = Visibility.Visible;
 
-            switch(button.Name)
+            switch (button.Name)
             {
                 case "Button1":
-                    mainText.Text = "I learned about the many different types of XAML 'code' that you can use to spice up the textblocks. I guess me learning about HTML and CSS all those months ago didn't go to waste!" ;
+                    mainText.Text = "I learned about the many different types of XAML 'code' that you can use to spice up the textblocks. I guess me learning about HTML and CSS all those months ago didn't go to waste!";
                     break;
                 case "Button2":
                     mainText.Text = "It's been practically a month since I last did anything according to my GitHub, but I've actually been working on a typing test here and there. not EVERYDAY mind you, but... yeah. I thought it " +
@@ -54,5 +59,37 @@ namespace LearningWPF
             Button1_LearningTextblocks button1_LearningTextblocks = new Button1_LearningTextblocks();
             button1_LearningTextblocks.ShowDialog();
         }
+
+        private void Needle_Reset(object sender, RoutedEventArgs e)
+        {
+            Background = Brushes.White;
+            successBorderStart = 4.4;
+            successBorderEnd = 4.4;
+            needleStart = 1.1;
+            needleEnd = 1.1;
+        }
+
+        private void NeedleChecker_Click(object sender, RoutedEventArgs e)
+        {
+            if (needleStart >= successBorderStart && needleStart <= successBorderEnd)
+            {
+                Background = Brushes.AliceBlue;
+            }
+        }
+
+        public void setNeedleSuccess_Click(object sender, RoutedEventArgs e)
+        {
+            successBorderStart = 4.4;
+            successBorderEnd = 7.5;
+            needleStart = 4.9;
+            needleEnd = 7.2;
+        }
     }
+
+
+    /*      successBorderStart = Canvas.GetLeft(successZone);
+            successBorderEnd = successBorderStart + successZone.ActualWidth;
+            needleStart = Canvas.GetLeft(needle);
+            needleEnd = needleStart + needle.ActualWidth;
+    */
 }
