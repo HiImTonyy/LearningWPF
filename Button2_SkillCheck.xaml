@@ -156,5 +156,18 @@
             Canvas.Top="395"
             Canvas.Left="555"
             Content=" Start Skill Check"/>
+        <Button Click="bugSquasher_Click"
+            Panel.ZIndex="2"
+            x:Name="bugSquasher"
+            Height="225"
+            Width="815"
+            Canvas.Top="295"
+            Canvas.Left="255"
+            Content="PRESS ME TO START"
+            FontSize="23"
+            FontWeight="Bold"/>
+        <TextBlock Canvas.Top="525" Canvas.Left="515" Foreground="DarkViolet" x:Name="bugSquashText">
+            (I RELEASED A BUG AND THIS IS THE ONLY WAY TO KILL IT!!!)
+        </TextBlock>
     </Canvas>
 </Window>

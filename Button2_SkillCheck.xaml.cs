@@ -38,7 +38,8 @@ namespace LearningWPF
         void SetupBar()
         {
             barStart = Canvas.GetLeft(mainSkillBar);
-            barEnd = barStart + mainSkillBar.ActualWidth;
+            double skillBarWidth = mainSkillBar.ActualWidth;
+            barEnd = barStart + skillBarWidth;
         }
 
         // Resets the entire skill-check system back to what it was before.
@@ -68,8 +69,14 @@ namespace LearningWPF
 
             while (spacebarPressed == false)
             {
-                Dispatcher.Invoke(() => Canvas.SetLeft(needle, Canvas.GetLeft(needle) + needleSpeed));
+                Dispatcher.Invoke(() =>
+                {
+                    double currentNeedleLeft = Canvas.GetLeft(needle);
+                    Canvas.SetLeft(needle, currentNeedleLeft + needleSpeed);
+                    needleStart = currentNeedleLeft + needleSpeed;
+                });
                 await Task.Delay(1);
+                if (needleStart >= successBorderEnd) { break; }
             }
 
             NeedleReseter.Visibility = Visibility.Visible;
@@ -133,6 +140,25 @@ namespace LearningWPF
         {
             Random roll = new Random();
             needleSpeed = roll.Next(1, 4);
+        }
+
+        private void bugSquasher_Click(object sender, RoutedEventArgs e)
+        {
+            RandomizeSuccessBarPosition();
+            Canvas.SetLeft(needle, barStart);
+            successBorderStart = Canvas.GetLeft(successZone);
+            successBorderEnd = successBorderStart + successZone.ActualWidth;
+            needleStart = Canvas.GetLeft(needle);
+            needleEnd = needleStart + needle.ActualWidth;
+            spacebarPressed = false;
+            SkillCheckStart = false;
+            Background = Brushes.White;
+            endSkillPopup.Visibility = Visibility.Hidden;
+            successZone.Visibility = Visibility.Hidden;
+            if (randomRadioWidth.IsChecked == true) { RandomizeSuccessZoneWidth(); }
+            if (randomRadioSpeed.IsChecked == true) { RandomizeNeedleSpeed(); }
+            bugSquasher.Visibility = Visibility.Hidden;
+            bugSquashText.Visibility = Visibility.Hidden;
         }
     }
 }
