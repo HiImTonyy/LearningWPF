@@ -29,37 +29,44 @@ namespace LearningWPF
         double successBorderEnd { get; set; }
         double needleStart { get; set; }
         double needleEnd { get; set; }
+        double needleSpeed { get; set; }
         double barStart { get; set; }
+        double barEnd { get; set; }
         bool spacebarPressed { get; set; }
-     
-
-        public double needleStartupStart = 0.0;
-        public double needleStartupEnd = 0.0;
+        bool SkillCheckStart { get; set; }
 
         void SetupBar()
         {
             barStart = Canvas.GetLeft(mainSkillBar);
+            barEnd = barStart + mainSkillBar.ActualWidth;
         }
 
         public void Needle_Reset(object sender, RoutedEventArgs e)
         {
+            RandomizeSuccessBarPosition();
             Canvas.SetLeft(needle, barStart);
             successBorderStart = Canvas.GetLeft(successZone);
             successBorderEnd = successBorderStart + successZone.ActualWidth;
             needleStart = Canvas.GetLeft(needle);
             needleEnd = needleStart + needle.ActualWidth;
             spacebarPressed = false;
+            SkillCheckStart = false;
             Background = Brushes.White;
             endSkillPopup.Visibility = Visibility.Hidden;
+            successZone.Visibility = Visibility.Hidden;
         }
 
         public async void StartSkillCheck(object sender, RoutedEventArgs e)
         {
+            successZone.Visibility = Visibility.Visible;
+            NeedleReseter.Visibility = Visibility.Hidden;
+            SkillCheckStart = true;
             while (spacebarPressed == false)
             {
                 Dispatcher.Invoke(() => Canvas.SetLeft(needle, Canvas.GetLeft(needle) + 2.2));
                 await Task.Delay(25);
             }
+            NeedleReseter.Visibility = Visibility.Visible;
             successBorderStart = Canvas.GetLeft(successZone);
             successBorderEnd = successBorderStart + successZone.ActualWidth;
             needleStart = Canvas.GetLeft(needle);
@@ -82,6 +89,18 @@ namespace LearningWPF
         private void runSkillCheck_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Space) { spacebarPressed = true; }
+        }
+
+        public void RandomizeSuccessBarPosition()
+        {
+            Random roll = new Random();
+            double randomPosition = roll.NextDouble();
+            double barWidth = mainSkillBar.ActualWidth;
+            double newPosition = barStart + randomPosition * barWidth;
+            Canvas.SetLeft(successZone, newPosition);
+            successBorderStart = newPosition;
+            successBorderEnd = newPosition + successZone.ActualWidth;
+            successZone.Visibility = Visibility.Visible;
         }
     }
 }

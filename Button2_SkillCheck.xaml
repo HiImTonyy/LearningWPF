@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LearningWPF"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Button2_SkillCheck" Height="620" Width="1180">
     <Canvas>
+        <!--Ending Popup-->
         <TextBlock 
             x:Name="endSkillPopup"
             Visibility="Hidden"
@@ -18,6 +20,75 @@
             Canvas.Top="195"
             >
         </TextBlock>
+        <!--Needle Speed Text-->
+        <TextBlock 
+            Text="Needle Speed"
+            FontSize="17"
+            FontWeight="Bold"
+            Foreground="Black"
+            Canvas.Left="315"
+            Canvas.Top="345"
+            >
+        </TextBlock>
+        <!--Success Box Width-->
+        <TextBlock 
+            Text="Success Box Width"
+            FontSize="17"
+            FontWeight="Bold"
+            Foreground="Black"
+            Canvas.Left="835"
+            Canvas.Top="345"
+            >
+        </TextBlock>
+        <RadioButton
+            FontSize="16"
+            Content="Easy"
+            Canvas.Left="840"
+            Canvas.Top="375">
+        </RadioButton>
+        <RadioButton
+            FontSize="16"
+            Content="Medium"
+            Canvas.Left="840"
+            Canvas.Top="395">
+        </RadioButton>
+        <RadioButton
+            FontSize="16"
+            Content="Hard"
+            Canvas.Left="840"
+            Canvas.Top="415">
+        </RadioButton>
+        <RadioButton
+            FontSize="16"
+            Content="Random"
+            Canvas.Left="840"
+            Canvas.Top="435">
+        </RadioButton>
+        <!--Needle Speed-->
+        <RadioButton
+            FontSize="16"
+            Content="Easy"
+            Canvas.Left="320"
+            Canvas.Top="375">
+        </RadioButton>
+        <RadioButton
+            FontSize="16"
+            Content="Medium"
+            Canvas.Left="320"
+            Canvas.Top="395">
+        </RadioButton>
+        <RadioButton
+            FontSize="16"
+            Content="Hard"
+            Canvas.Left="320"
+            Canvas.Top="415">
+        </RadioButton>
+        <RadioButton
+            FontSize="16"
+            Content="Random"
+            Canvas.Left="320"
+            Canvas.Top="435">
+        </RadioButton>
         <!--Bar-->
         <Border 
             x:Name="mainSkillBar"
@@ -42,7 +113,9 @@
             Height="25"
             Width="25"
             Canvas.Top="455"
-            Canvas.Left="555"/>
+            Canvas.Left="555"
+            Visibility="Hidden"/>
+        <!--Reset Needle-->
         <Button Click="Needle_Reset"
             x:Name="NeedleReseter"
             Height="25"
@@ -50,6 +123,7 @@
             Canvas.Top="495"
             Canvas.Left="655"
             Content="Reset Needle"/>
+        <!--Start Skillcheck-->
         <Button Click="StartSkillCheck" PreviewKeyDown="runSkillCheck_PreviewKeyDown"
             x:Name="runSkillCheck"
             Height="25"
