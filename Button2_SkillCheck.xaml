@@ -41,24 +41,36 @@
             >
         </TextBlock>
         <RadioButton
+            Checked="RadioButton_Checked"
+            x:Name="easyRadioWidth"
+            GroupName="successBoxWidth"
             FontSize="16"
             Content="Easy"
             Canvas.Left="840"
             Canvas.Top="375">
         </RadioButton>
         <RadioButton
+            Checked="RadioButton_Checked"
+            x:Name="normalRadioWidth"
+            GroupName="successBoxWidth"
             FontSize="16"
-            Content="Medium"
+            Content="Normal"
             Canvas.Left="840"
             Canvas.Top="395">
         </RadioButton>
         <RadioButton
+            Checked="RadioButton_Checked"
+            x:Name="hardRadioWidth"
+            GroupName="successBoxWidth"
             FontSize="16"
             Content="Hard"
             Canvas.Left="840"
             Canvas.Top="415">
         </RadioButton>
         <RadioButton
+            Checked="RadioButton_Checked"
+            x:Name="randomRadioWidth"
+            GroupName="successBoxWidth"
             FontSize="16"
             Content="Random"
             Canvas.Left="840"
@@ -66,24 +78,37 @@
         </RadioButton>
         <!--Needle Speed-->
         <RadioButton
+            Checked="RadioButton_Checked"
+            x:Name="easyRadioSpeed"
+            GroupName="NeedleSpeed"
             FontSize="16"
             Content="Easy"
             Canvas.Left="320"
             Canvas.Top="375">
         </RadioButton>
         <RadioButton
+            IsChecked="True"
+            Checked="RadioButton_Checked"
+            x:Name="normalRadioSpeed"
+            GroupName="NeedleSpeed"
             FontSize="16"
-            Content="Medium"
+            Content="Normal"
             Canvas.Left="320"
             Canvas.Top="395">
         </RadioButton>
         <RadioButton
+            Checked="RadioButton_Checked"
+            x:Name="hardRadioSpeed"
+            GroupName="NeedleSpeed"
             FontSize="16"
             Content="Hard"
             Canvas.Left="320"
             Canvas.Top="415">
         </RadioButton>
         <RadioButton
+            Checked="RadioButton_Checked"
+            x:Name="randomRadioSpeed"
+            GroupName="NeedleSpeed"
             FontSize="16"
             Content="Random"
             Canvas.Left="320"

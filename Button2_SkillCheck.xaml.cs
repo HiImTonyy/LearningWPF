@@ -41,6 +41,7 @@ namespace LearningWPF
             barEnd = barStart + mainSkillBar.ActualWidth;
         }
 
+        // Resets the entire skill-check system back to what it was before.
         public void Needle_Reset(object sender, RoutedEventArgs e)
         {
             RandomizeSuccessBarPosition();
@@ -54,18 +55,23 @@ namespace LearningWPF
             Background = Brushes.White;
             endSkillPopup.Visibility = Visibility.Hidden;
             successZone.Visibility = Visibility.Hidden;
+            if (randomRadioWidth.IsChecked == true) { RandomizeSuccessZoneWidth(); }
+            if (randomRadioSpeed.IsChecked == true) { RandomizeNeedleSpeed(); }
         }
 
+        // Begins the skill-check.
         public async void StartSkillCheck(object sender, RoutedEventArgs e)
         {
             successZone.Visibility = Visibility.Visible;
             NeedleReseter.Visibility = Visibility.Hidden;
             SkillCheckStart = true;
+
             while (spacebarPressed == false)
             {
-                Dispatcher.Invoke(() => Canvas.SetLeft(needle, Canvas.GetLeft(needle) + 2.2));
-                await Task.Delay(25);
+                Dispatcher.Invoke(() => Canvas.SetLeft(needle, Canvas.GetLeft(needle) + needleSpeed));
+                await Task.Delay(1);
             }
+
             NeedleReseter.Visibility = Visibility.Visible;
             successBorderStart = Canvas.GetLeft(successZone);
             successBorderEnd = successBorderStart + successZone.ActualWidth;
@@ -91,6 +97,7 @@ namespace LearningWPF
             if (e.Key == Key.Space) { spacebarPressed = true; }
         }
 
+        // Obvious method is obvious.
         public void RandomizeSuccessBarPosition()
         {
             Random roll = new Random();
@@ -101,6 +108,31 @@ namespace LearningWPF
             successBorderStart = newPosition;
             successBorderEnd = newPosition + successZone.ActualWidth;
             successZone.Visibility = Visibility.Visible;
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            if (easyRadioWidth.IsChecked == true) { successZone.Width = 45; }
+            else if (normalRadioWidth.IsChecked == true) { successZone.Width = 25; }
+            else if (hardRadioWidth.IsChecked == true) { successZone.Width = 10; }
+            else if (randomRadioWidth.IsChecked == true) { RandomizeSuccessZoneWidth(); }
+
+            if (easyRadioSpeed.IsChecked == true) { needleSpeed = 1.5; }
+            else if (normalRadioSpeed.IsChecked == true) { needleSpeed = 2.5; }
+            else if (hardRadioSpeed.IsChecked == true) { needleSpeed = 4; }
+            else if (randomRadioSpeed.IsChecked == true) { RandomizeNeedleSpeed(); }
+        }
+
+        public void RandomizeSuccessZoneWidth()
+        {
+            Random roll = new Random();
+            successZone.Width = roll.Next(3, 55);
+        }
+
+        public void RandomizeNeedleSpeed()
+        {
+            Random roll = new Random();
+            needleSpeed = roll.Next(1, 4);
         }
     }
 }
