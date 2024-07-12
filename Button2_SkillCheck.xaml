@@ -12,12 +12,12 @@
         <TextBlock 
             x:Name="endSkillPopup"
             Visibility="Hidden"
-            Text="'Murica!"
+            Text="'Mruica!"
             FontSize="63"
             FontWeight="Bold"
             Foreground="Black"
-            Canvas.Left="315"
-            Canvas.Top="195"
+            Canvas.Left="311"
+            Canvas.Top="94" HorizontalAlignment="Left" VerticalAlignment="Top"
             >
         </TextBlock>
         <!--Needle Speed Text-->
@@ -26,8 +26,8 @@
             FontSize="17"
             FontWeight="Bold"
             Foreground="Black"
-            Canvas.Left="315"
-            Canvas.Top="345"
+            Canvas.Left="272"
+            Canvas.Top="232" HorizontalAlignment="Center" VerticalAlignment="Top"
             >
         </TextBlock>
         <!--Success Box Width-->
@@ -36,8 +36,8 @@
             FontSize="17"
             FontWeight="Bold"
             Foreground="Black"
-            Canvas.Left="835"
-            Canvas.Top="345"
+            Canvas.Left="792"
+            Canvas.Top="232" HorizontalAlignment="Center" VerticalAlignment="Top"
             >
         </TextBlock>
         <RadioButton
@@ -46,8 +46,8 @@
             GroupName="successBoxWidth"
             FontSize="16"
             Content="Easy"
-            Canvas.Left="840"
-            Canvas.Top="375">
+            Canvas.Left="797"
+            Canvas.Top="262" HorizontalAlignment="Center" VerticalAlignment="Top">
         </RadioButton>
         <RadioButton
             Checked="RadioButton_Checked"
@@ -55,8 +55,8 @@
             GroupName="successBoxWidth"
             FontSize="16"
             Content="Normal"
-            Canvas.Left="840"
-            Canvas.Top="395">
+            Canvas.Left="797"
+            Canvas.Top="282" HorizontalAlignment="Center" VerticalAlignment="Top">
         </RadioButton>
         <RadioButton
             Checked="RadioButton_Checked"
@@ -64,8 +64,8 @@
             GroupName="successBoxWidth"
             FontSize="16"
             Content="Hard"
-            Canvas.Left="840"
-            Canvas.Top="415">
+            Canvas.Left="797"
+            Canvas.Top="302" HorizontalAlignment="Center" VerticalAlignment="Top">
         </RadioButton>
         <RadioButton
             Checked="RadioButton_Checked"
@@ -73,8 +73,8 @@
             GroupName="successBoxWidth"
             FontSize="16"
             Content="Random"
-            Canvas.Left="840"
-            Canvas.Top="435">
+            Canvas.Left="797"
+            Canvas.Top="322" HorizontalAlignment="Center" VerticalAlignment="Top">
         </RadioButton>
         <!--Needle Speed-->
         <RadioButton
@@ -83,8 +83,8 @@
             GroupName="NeedleSpeed"
             FontSize="16"
             Content="Easy"
-            Canvas.Left="320"
-            Canvas.Top="375">
+            Canvas.Left="277"
+            Canvas.Top="262" HorizontalAlignment="Center" VerticalAlignment="Top">
         </RadioButton>
         <RadioButton
             IsChecked="True"
@@ -93,8 +93,8 @@
             GroupName="NeedleSpeed"
             FontSize="16"
             Content="Normal"
-            Canvas.Left="320"
-            Canvas.Top="395">
+            Canvas.Left="277"
+            Canvas.Top="282" HorizontalAlignment="Center" VerticalAlignment="Top">
         </RadioButton>
         <RadioButton
             Checked="RadioButton_Checked"
@@ -102,8 +102,8 @@
             GroupName="NeedleSpeed"
             FontSize="16"
             Content="Hard"
-            Canvas.Left="320"
-            Canvas.Top="415">
+            Canvas.Left="277"
+            Canvas.Top="302" HorizontalAlignment="Center" VerticalAlignment="Top">
         </RadioButton>
         <RadioButton
             Checked="RadioButton_Checked"
@@ -111,62 +111,63 @@
             GroupName="NeedleSpeed"
             FontSize="16"
             Content="Random"
-            Canvas.Left="320"
-            Canvas.Top="435">
+            Canvas.Left="277"
+            Canvas.Top="322" HorizontalAlignment="Center" VerticalAlignment="Top">
         </RadioButton>
         <!--Bar-->
         <Border 
             x:Name="mainSkillBar"
             Background="Black"
-            Height="25"
+            Height="26"
             Width="355"
-            Canvas.Top="455"
-            Canvas.Left="455"/>
+            Canvas.Top="342"
+            Canvas.Left="412" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <!--Needle-->
         <Border
             x:Name="needle"
             Background="White"
-            Height="25"
+            Height="26"
             Width="5"
-            Canvas.Top="455"
-            Canvas.Left="455"
-            Panel.ZIndex="1"/>
+            Canvas.Top="342"
+            Canvas.Left="412"
+            Panel.ZIndex="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <!--Success Zone-->
         <Border
             x:Name="successZone"
             Background="LightGreen"
-            Height="25"
+            Height="26"
             Width="25"
-            Canvas.Top="455"
-            Canvas.Left="555"
-            Visibility="Hidden"/>
+            Canvas.Top="342"
+            Canvas.Left="512"
+            Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <!--Reset Needle-->
         <Button Click="Needle_Reset"
             x:Name="NeedleReseter"
-            Height="25"
+            Height="26"
             Width="85"
-            Canvas.Top="495"
-            Canvas.Left="655"
-            Content="Reset Needle"/>
+            Canvas.Top="382"
+            Canvas.Left="612"
+            Content="Reset Needle" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <!--Start Skillcheck-->
         <Button Click="StartSkillCheck" PreviewKeyDown="runSkillCheck_PreviewKeyDown"
             x:Name="runSkillCheck"
-            Height="25"
+            Height="26"
             Width="95"
-            Canvas.Top="395"
-            Canvas.Left="555"
-            Content=" Start Skill Check"/>
+            Canvas.Top="282"
+            Canvas.Left="512"
+            Content=" Start Skill Check" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Button Click="bugSquasher_Click"
             Panel.ZIndex="2"
             x:Name="bugSquasher"
             Height="225"
             Width="815"
-            Canvas.Top="295"
-            Canvas.Left="255"
+            Canvas.Top="182.5"
+            Canvas.Left="197.5"
             Content="PRESS ME TO START"
             FontSize="23"
-            FontWeight="Bold"/>
-        <TextBlock Canvas.Top="525" Canvas.Left="515" Foreground="DarkViolet" x:Name="bugSquashText">
+            FontWeight="Bold"
+                Visibility="Visible"/>
+        <TextBlock Canvas.Top="412" Canvas.Left="472" Foreground="DarkViolet" x:Name="bugSquashText" HorizontalAlignment="Center" VerticalAlignment="Top">
             (I RELEASED A BUG AND THIS IS THE ONLY WAY TO KILL IT!!!)
         </TextBlock>
     </Canvas>

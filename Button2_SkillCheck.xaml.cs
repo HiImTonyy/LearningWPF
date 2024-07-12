@@ -139,7 +139,7 @@ namespace LearningWPF
         public void RandomizeNeedleSpeed()
         {
             Random roll = new Random();
-            needleSpeed = roll.Next(1, 4);
+            needleSpeed = roll.Next(1, 6);
         }
 
         private void bugSquasher_Click(object sender, RoutedEventArgs e)

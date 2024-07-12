@@ -41,7 +41,7 @@ namespace LearningWPF
                     mainText.Text = "I learned about the many different types of XAML 'code' that you can use to spice up the textblocks. I guess me learning about HTML and CSS all those months ago didn't go to waste!";
                     break;
                 case "Button2":
-                    mainText.Text = "I created a simple skill-check thing for the fun of it.";
+                    mainText.Text = "I created a simple skill-check thing for the fun of it. The goal is to press spacebar when the needle gets inside the green success zone. you can also change the speed of the needle, as well as the width of the sucess zone.";
                     break;
             }
         }
