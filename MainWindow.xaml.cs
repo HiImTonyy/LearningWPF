@@ -39,7 +39,7 @@ namespace LearningWPF
                     mainText.Text = "I created a simple skill-check thing for the fun of it. The goal is to press spacebar when the needle gets inside the green success zone. you can also change the speed of the needle, as well as the width of the sucess zone.";
                     break;
                 case "Button3":
-                    mainText.Text = "???";
+                    mainText.Text = "Learned a little about Labels. more 'advanced' stuff will be in the next few buttons, whenever that is.";
                     break;
             }
         }

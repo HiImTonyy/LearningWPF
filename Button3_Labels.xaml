@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LearningWPF"
         mc:Ignorable="d"
-        Title="Button3_Labels" Height="620" Width="1180">
-    <Canvas>
-        
-    </Canvas>
+        Title="Button3_Labels" Height="620" Width="1180"
+        WindowStartupLocation="CenterScreen">
+    <StackPanel VerticalAlignment="Center">
+        <Label HorizontalAlignment="Center">
+            <StackPanel>
+                <Image Width="100" Source="https://us.123rf.com/450wm/chrupka/chrupka2204/chrupka220400036/184916670-golden-christian-cross-with-sunburst-vector-illustration.jpg"/>
+                <Image Height="200" Width="334" Source="https://t3.ftcdn.net/jpg/06/09/92/58/360_F_609925869_1gScfHuoNjI23ntOaceEaCnQGzvf9NkH.jpg"/>
+                <AccessText FontStyle="Oblique" FontWeight="ExtraBlack" HorizontalAlignment="Center" Text="Confess your sins"/>
+                <TextBox Margin="0,6,0,0" FontSize="15"/>
+            </StackPanel>
+        </Label>
+    </StackPanel>
 </Window>
