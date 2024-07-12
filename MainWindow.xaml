@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="720" Width="1280">
     <Canvas x:Name="mainCanvas" Height="720" Width="1280">
-        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button1_Click"
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
                 x:Name="Button1"
                 Height="35"
                 Width="135"
@@ -18,14 +18,22 @@
                 Canvas.Left="15">
 
         </Button>
-
-        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button2_Click"
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
                 x:Name="Button2"
                 Height="35"
                 Width="135"
                 Content="2. Skill Check"
                 FontWeight="Bold"
                 Canvas.Top="54"
+                Canvas.Left="15">
+        </Button>
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
+                x:Name="Button3"
+                Height="35"
+                Width="135"
+                Content="3. Labels"
+                FontWeight="Bold"
+                Canvas.Top="94"
                 Canvas.Left="15">
         </Button>
         <TextBlock 

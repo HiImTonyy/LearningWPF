@@ -25,11 +25,6 @@ namespace LearningWPF
         {
             InitializeComponent();
         }
-
-        double successBorderStart = 4.4;
-        double successBorderEnd = 4.4;
-        double needleStart = 1.1;
-        double needleEnd = 1.1;
         private void Grid_MouseEnter(object sender, MouseEventArgs e)
         {
             var button = sender as Button;
@@ -43,6 +38,9 @@ namespace LearningWPF
                 case "Button2":
                     mainText.Text = "I created a simple skill-check thing for the fun of it. The goal is to press spacebar when the needle gets inside the green success zone. you can also change the speed of the needle, as well as the width of the sucess zone.";
                     break;
+                case "Button3":
+                    mainText.Text = "???";
+                    break;
             }
         }
 
@@ -51,16 +49,26 @@ namespace LearningWPF
             mainText.Visibility = Visibility.Hidden;
         }
 
-        private void Button1_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Button1_LearningTextblocks button1_LearningTextblocks = new Button1_LearningTextblocks();
-            button1_LearningTextblocks.ShowDialog();
-        }
+            var buttonClick = sender as Button;
+            mainText.Visibility = Visibility.Visible;
 
-        private void Button2_Click(object sender, RoutedEventArgs e)
-        {
-            Button2_SkillCheck button2_SkillCheck = new Button2_SkillCheck();
-            button2_SkillCheck.ShowDialog();
+            switch (buttonClick.Name)
+            {
+                case "Button1":
+                    Button1_LearningTextblocks button1_LearningTextblocks = new Button1_LearningTextblocks();
+                    button1_LearningTextblocks.ShowDialog();
+                    break;
+                case "Button2":
+                    Button2_SkillCheck button2_SkillCheck = new Button2_SkillCheck();
+                    button2_SkillCheck.ShowDialog();
+                    break;
+                case "Button3":
+                    Button3_Labels button3_Labels = new Button3_Labels();
+                    button3_Labels.ShowDialog();
+                    break;
+            }
         }
     }
 }
