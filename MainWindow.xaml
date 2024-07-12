@@ -36,6 +36,16 @@
                 Canvas.Top="94"
                 Canvas.Left="15">
         </Button>
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
+                x:Name="Button4"
+                Height="35"
+                Width="135"
+                Content="4. TextBox"
+                FontWeight="Bold"
+                Canvas.Top="134"
+                Canvas.Left="15" HorizontalAlignment="Center" VerticalAlignment="Top">
+        </Button>
+
         <TextBlock 
             x:Name="mainText"
             Height="145"

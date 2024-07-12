@@ -41,6 +41,9 @@ namespace LearningWPF
                 case "Button3":
                     mainText.Text = "Learned a little about Labels. more 'advanced' stuff will be in the next few buttons, whenever that is.";
                     break;
+                case "Button4":
+                    mainText.Text = "Learned a little about the Textbox. I should probably put these sorts of small things in its own button, but I mean... it is what it is. I made a skill-check thing just for the hell of it, so if I get bored then I'll probably just make something else on the side while learning. again, it is what it is.";
+                    break;
             }
         }
 
@@ -67,6 +70,10 @@ namespace LearningWPF
                 case "Button3":
                     Button3_Labels button3_Labels = new Button3_Labels();
                     button3_Labels.ShowDialog();
+                    break;
+                case "Button4":
+                    Button4_TextBox Button4_TextBox = new Button4_TextBox();
+                    Button4_TextBox.ShowDialog();
                     break;
             }
         }

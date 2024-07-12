@@ -1,0 +1,27 @@
+﻿<Window x:Class="LearningWPF.Button4_TextBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearningWPF"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Background="black"
+        Title="Button4_TextBox" Height="300" Width="410">
+    <StackPanel VerticalAlignment="Center">
+        <TextBox 
+            BorderBrush="LightGray"
+            FontSize="18"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"
+            Margin="20,0,20,0"
+            SpellCheck.IsEnabled="False"
+            Language="en-US"
+            Background="Black"
+            Foreground="LawnGreen"
+            FontWeight="UltraLight"
+            Text="OMG, ZERG RUSH! kekeke"
+            IsReadOnly="True"
+         />
+    </StackPanel>
+</Window>
