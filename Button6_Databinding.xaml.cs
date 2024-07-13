@@ -31,7 +31,6 @@ namespace LearningWPF
         private void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             sliderValueText.Text = slider.Value.ToString();
-            mainImage.Height = slider.Value;
             if (slider.Value >= 10) { movedSlider = true; }
             if (movedSlider == true && slider.Value == 0) { changeImage(); }
         }

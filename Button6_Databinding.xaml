@@ -27,6 +27,14 @@
             Margin="329,394,329,11"
             FontWeight="Black"
             />
-        <Image x:Name="mainImage" Height="0" Source="https://static.wikia.nocookie.net/nextbot/images/8/8f/Delgado.png/revision/latest?cb=20230807161930" Margin="162,18,118,107"/>
+        <Image x:Name="mainImage"
+       Source="https://static.wikia.nocookie.net/nextbot/images/8/8f/Delgado.png/revision/latest?cb=20230807161930"
+       Margin="162,18,118,107">
+            <Image.Height>
+                <Binding ElementName="slider"
+                 Path="Value"
+                 UpdateSourceTrigger="PropertyChanged"/>
+            </Image.Height>
+        </Image>
     </Grid>
 </Window>
