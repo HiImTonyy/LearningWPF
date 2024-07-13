@@ -1,0 +1,32 @@
+﻿<Window x:Class="LearningWPF.Button6_Databinding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearningWPF"
+        mc:Ignorable="d"
+        Title="Button6_Databinding" Height="420" Width="700"
+        WindowStartupLocation="CenterScreen">
+    <Grid VerticalAlignment="Bottom" Height="420" Width="700">
+        <Slider
+            x:Name="slider"
+            Maximum="300"
+            TickPlacement="Both"
+            TickFrequency="10"
+            IsSnapToTickEnabled="True"
+            Background="DarkMagenta"
+            ValueChanged="slider_ValueChanged"
+            Width="500"
+            Height="40" Margin="100,318,100,62"
+            >
+        </Slider>
+        <Label Margin="308,363,308,31" FontWeight="Bold">Slider Value</Label>
+        <TextBlock
+            x:Name="sliderValueText"
+            Text="0" 
+            Margin="329,394,329,11"
+            FontWeight="Black"
+            />
+        <Image x:Name="mainImage" Height="0" Source="https://static.wikia.nocookie.net/nextbot/images/8/8f/Delgado.png/revision/latest?cb=20230807161930" Margin="162,18,118,107"/>
+    </Grid>
+</Window>
