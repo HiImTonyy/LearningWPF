@@ -1,0 +1,29 @@
+﻿<Window x:Class="LearningWPF.Button5_Buttons"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearningWPF"
+        mc:Ignorable="d"
+        Title="Button5_Buttons" Height="620" Width="1180"
+        WindowStartupLocation="CenterScreen">
+    <Grid VerticalAlignment="Center">
+        <Button x:Name="mainButton"
+                Width="270"
+                Height="50"
+                Background="Red"
+                FontWeight="SemiBold"
+                FontStyle="Oblique"
+                FontSize="18"
+                Click="ClickButton"
+                >Click me to make it all go away
+        </Button>
+        <TextBlock
+            x:Name="mainText"
+            FontSize="57"
+            FontWeight="UltraLight"
+            Text="5378008"
+            HorizontalAlignment="Center"
+            Visibility="Hidden"/>
+    </Grid>
+</Window>
