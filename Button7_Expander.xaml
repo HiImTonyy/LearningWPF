@@ -14,6 +14,12 @@
             FontSize="55"
             FontWeight="DemiBold"
             Text="F.A.Q" Width="131"/>
+        <TextBlock
+            Foreground="White"
+            Text="I'm sorry, your easter egg is another web-page :)"
+            FontSize="10"
+            HorizontalAlignment="Center">
+        </TextBlock>
         <Expander 
             Header="How do I not suck?" 
             FontSize="23"
@@ -80,7 +86,7 @@
             Width="435"
             FontWeight="Light"/>
         </Expander>
-        <Expander Expanded="Expander_Expanded"
+        <Expander Expanded="Expander_Expanded" Collapsed="Expander_Collapsed"
      Header="Ko0Ln88HgazQ-=19..3,41a.2A...." 
      FontSize="23"
      FontWeight="Black">

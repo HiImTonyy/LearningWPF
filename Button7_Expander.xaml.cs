@@ -28,5 +28,10 @@ namespace LearningWPF
         {
             Background = Brushes.Transparent;
         }
+
+        private void Expander_Collapsed(object sender, RoutedEventArgs e)
+        {
+            Background = Brushes.White;
+        }
     }
 }
