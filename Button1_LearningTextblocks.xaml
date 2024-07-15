@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:LearningWPF"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Button1_LearningTextblocks" Height="620" Width="1180">
+        Title="Button1_LearningTextblocks" Height="620" Width="1180"
+        ResizeMode="NoResize">
     <StackPanel Name="MainStackPanal" Width="250" VerticalAlignment="Center">
         <TextBlock x:Name="Text1">I <Bold>don't</Bold> even <Italic>know.</Italic>
             <LineBreak/>

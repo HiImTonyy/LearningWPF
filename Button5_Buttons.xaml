@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:LearningWPF"
         mc:Ignorable="d"
         Title="Button5_Buttons" Height="620" Width="1180"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
     <Grid VerticalAlignment="Center">
         <Button x:Name="mainButton"
                 Width="270"

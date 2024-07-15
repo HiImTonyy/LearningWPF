@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:LearningWPF"
         mc:Ignorable="d"
         Title="Button3_Labels" Height="620" Width="1180"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
     <StackPanel VerticalAlignment="Center">
         <Label HorizontalAlignment="Center">
             <StackPanel>

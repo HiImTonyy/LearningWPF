@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:LearningWPF"
         mc:Ignorable="d"
         Title="Button6_Databinding" Height="420" Width="700"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
     <Grid VerticalAlignment="Bottom" Height="420" Width="700">
         <Slider
             x:Name="slider"

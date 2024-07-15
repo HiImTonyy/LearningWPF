@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:LearningWPF"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="720" Width="1280">
+        Title="MainWindow" Height="720" Width="1280"
+        ResizeMode="NoResize">
     <Canvas x:Name="mainCanvas" Height="720" Width="1280">
         <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
                 x:Name="Button1"
@@ -63,6 +64,15 @@
                Canvas.Top="174"
                Canvas.Left="15"
                FontSize="10">
+        </Button>
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
+            x:Name="Button7"
+            Height="35"
+            Width="135"
+            Content="7. Calender"
+            FontWeight="Bold"
+            Canvas.Top="214"
+            Canvas.Left="15">
         </Button>
 
         <TextBlock 

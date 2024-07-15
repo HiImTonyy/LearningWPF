@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:LearningWPF"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Button2_SkillCheck" Height="620" Width="1180">
+        Title="Button2_SkillCheck" Height="620" Width="1180"
+        ResizeMode="NoResize">
     <Canvas>
         <!--Ending Popup-->
         <TextBlock 

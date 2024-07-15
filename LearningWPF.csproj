@@ -79,6 +79,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Button7_Calender.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -104,6 +108,9 @@
     </Compile>
     <Compile Include="Button6_Databinding.xaml.cs">
       <DependentUpon>Button6_Databinding.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Button7_Calender.xaml.cs">
+      <DependentUpon>Button7_Calender.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

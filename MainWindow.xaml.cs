@@ -48,6 +48,9 @@ namespace LearningWPF
                     mainText.Text = "Well. uh.. I didn't really learn a whole lot of new things with this one to be honest, but I still made something out of it.";
                     break;
                 case "Button6":
+                    mainText.Text = "Learned about the slider and a bit of data-binding. You can move the slider up and down to resize the image displayed. the image also changes randomly when sliding it to 0.";
+                    break;
+                case "Button7":
                     mainText.Text = "???";
                     break;
             }
@@ -88,6 +91,10 @@ namespace LearningWPF
                 case "Button6":
                     Button6_Databinding Button6_Databinding = new Button6_Databinding();
                     Button6_Databinding.ShowDialog();
+                    break;
+                case "Button7":
+                    Button7_Calender Button7_Calender = new Button7_Calender();
+                    Button7_Calender.ShowDialog();
                     break;
             }
         }
