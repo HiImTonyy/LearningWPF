@@ -93,8 +93,8 @@ namespace LearningWPF
                     Button6_Databinding.ShowDialog();
                     break;
                 case "Button7":
-                    Button7_Calender Button7_Calender = new Button7_Calender();
-                    Button7_Calender.ShowDialog();
+                    Button7_Expander Button7_Expander = new Button7_Expander();
+                    Button7_Expander.ShowDialog();
                     break;
             }
         }

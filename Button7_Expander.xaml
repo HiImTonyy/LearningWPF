@@ -1,0 +1,95 @@
+﻿<Window x:Class="LearningWPF.Button7_Expander"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearningWPF"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Button7_Expander" Height="520" Width="920"
+        ResizeMode="NoResize">
+    <StackPanel HorizontalAlignment="Center">
+        <TextBlock
+            TextDecorations="Underline"
+            FontSize="55"
+            FontWeight="DemiBold"
+            Text="F.A.Q" Width="131"/>
+        <Expander 
+            Header="How do I not suck?" 
+            FontSize="23"
+            FontWeight="Black">
+            <TextBlock
+                FontSize="17"
+                Text="By not sucking."
+                FontWeight="Light">
+            </TextBlock>
+        </Expander>
+        <Expander 
+            Header="Help me, I got banned for no reason!" 
+            FontSize="23"
+            FontWeight="Black">
+            <TextBlock
+                TextWrapping="Wrap"
+                Text="We have the greatest anti-cheat system in existence. If it detects anything, then that's on you. Fuck off and buy a new computer along with a new copy of our game. Bitch."
+                FontSize="17"
+                Width="435"
+                FontWeight="Light">
+            </TextBlock>
+        </Expander>
+        <Expander 
+            Header="Will you add more diverse characters?" 
+            FontSize="23"
+            FontWeight="Black">
+            <TextBlock
+                TextWrapping="Wrap"
+                Text="We will add new characters, but we will never add a character just to check a box."
+                FontSize="17"
+                Width="435"
+                FontWeight="Light"/>
+        </Expander>
+        <Expander 
+            Header="My account got hacked!" 
+            FontSize="23"
+            FontWeight="Black">
+            <TextBlock
+                TextWrapping="Wrap"
+                Text="Please send us an email ASAP and we will restore any missing items or gold. We will also let you decide what to do about the person who hacked your account. we can either I.P and hardware the hacker, investigate where the hacker lives and sue them, or have the hacker gang-stalked digitally for 6 months straight."
+                FontSize="17"
+                Width="435"
+                FontWeight="Light"/>
+        </Expander>
+        <Expander 
+        Header="Will you add a report function?" 
+        FontSize="23"
+        FontWeight="Black">
+            <TextBlock
+            TextWrapping="Wrap"
+            Text="Go fuck yourself. We value freedom of speech and will never add a report function. we do have a mute function, so use it."
+            FontSize="17"
+            Width="435"
+            FontWeight="Light"/>
+        </Expander>
+        <Expander
+        Header="Are you hiring?" 
+        FontSize="23"
+        FontWeight="Black">
+            <TextBlock
+            TextWrapping="Wrap"
+            Text="Yes! we are hiring new junior software-engineers. if you want to apply, then just be aware that you MUST have 8 years of experience with C++, 6 years of experience with C#,  4 years of experience with RUST, 9 years of experience with JavaScript, 15 years of experience with C, and at LEAST 45 years of experience with COBOL. salary is $34,000 a year. NON-NEGOTIABLE!"
+            FontSize="17"
+            Width="435"
+            FontWeight="Light"/>
+        </Expander>
+        <Expander Expanded="Expander_Expanded"
+     Header="Ko0Ln88HgazQ-=19..3,41a.2A...." 
+     FontSize="23"
+     FontWeight="Black">
+            <TextBlock
+         TextWrapping="Wrap"
+         Text=""
+         FontSize="17"
+         Width="435"
+         FontWeight="Light"/>
+        </Expander>
+    </StackPanel>
+</Window>

@@ -15,13 +15,18 @@ using System.Windows.Shapes;
 namespace LearningWPF
 {
     /// <summary>
-    /// Interaction logic for Button7_Calender.xaml
+    /// Interaction logic for Button7_Expander.xaml
     /// </summary>
-    public partial class Button7_Calender : Window
+    public partial class Button7_Expander : Window
     {
-        public Button7_Calender()
+        public Button7_Expander()
         {
             InitializeComponent();
+        }
+
+        private void Expander_Expanded(object sender, RoutedEventArgs e)
+        {
+            Background = Brushes.Transparent;
         }
     }
 }

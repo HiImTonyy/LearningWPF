@@ -69,7 +69,7 @@
             x:Name="Button7"
             Height="35"
             Width="135"
-            Content="7. Calender"
+            Content="7. Expander"
             FontWeight="Bold"
             Canvas.Top="214"
             Canvas.Left="15">
