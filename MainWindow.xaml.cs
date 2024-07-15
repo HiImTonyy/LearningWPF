@@ -64,7 +64,7 @@ namespace LearningWPF
             mainText.Visibility = Visibility.Hidden;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
             var buttonClick = sender as Button;
             mainText.Visibility = Visibility.Visible;
@@ -101,6 +101,7 @@ namespace LearningWPF
                     break;
                 case "Button8":
                     Button8_Grid Button8_Grid = new Button8_Grid();
+                    await Task.Delay(95);
                     Button8_Grid.ShowDialog();
                     break;
             }
