@@ -51,6 +51,9 @@ namespace LearningWPF
                     mainText.Text = "Learned about the slider and a bit of data-binding. You can move the slider up and down to resize the image displayed. the image also changes randomly when sliding it to 0.";
                     break;
                 case "Button7":
+                    mainText.Text = "Learned about the expander.";
+                    break;
+                case "Button8":
                     mainText.Text = "???";
                     break;
             }
@@ -95,6 +98,10 @@ namespace LearningWPF
                 case "Button7":
                     Button7_Expander Button7_Expander = new Button7_Expander();
                     Button7_Expander.ShowDialog();
+                    break;
+                case "Button8":
+                    Button8_Grid Button8_Grid = new Button8_Grid();
+                    Button8_Grid.ShowDialog();
                     break;
             }
         }

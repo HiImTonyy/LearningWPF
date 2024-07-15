@@ -86,5 +86,13 @@
             Canvas.Bottom="55"
             Canvas.Left="170"
             />
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
+            x:Name="Button8"
+            Height="35"
+            Width="135"
+            Content="8. Grid"
+            FontWeight="Bold"
+            Canvas.Top="254"
+            Canvas.Left="15"/>
     </Canvas>
 </Window>
