@@ -9,11 +9,13 @@
         Title="MainWindow" Height="720" Width="420"
         ResizeMode="NoResize">
     <DockPanel>
-        <Button DockPanel.Dock="Top">We're rats, we're rats!</Button>
-        <Button DockPanel.Dock="Top">We stalk at night</Button>
-        <Button DockPanel.Dock="Left">{rat}</Button>
-        <Button DockPanel.Dock="Right">{rat}</Button>
-        <Button DockPanel.Dock="Bottom">We're the rats!</Button>
-        <Button>We pray at night</Button>
+        <Button FontWeight="Black" Background="White" DockPanel.Dock="Top">We're rats, we're rats!</Button>
+        <Button FontWeight="Black" Background="White" DockPanel.Dock="Top">We stalk at night</Button>
+        <Button FontWeight="Black" Background="White" DockPanel.Dock="Left">
+            <Image FlowDirection="RightToLeft" Width="140" Source="https://i.redd.it/jpqshaknolt11.png"></Image></Button>
+        <Button Background="White" DockPanel.Dock="Right">
+            <Image Width="140" Source="https://i.redd.it/jpqshaknolt11.png"></Image></Button>
+        <Button FontWeight="Black" Background="White" DockPanel.Dock="Bottom">We're the rats!</Button>
+        <Button FontWeight="Black" Background="White">We pray at night</Button>
     </DockPanel>
 </Window>
