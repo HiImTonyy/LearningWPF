@@ -54,6 +54,12 @@ namespace LearningWPF
                     mainText.Text = "Learned about the expander.";
                     break;
                 case "Button8":
+                    mainText.Text = "Learned more about using the grid.";
+                    break;
+                case "Button9":
+                    mainText.Text = "Learned more about the stackpanal as well as what the wrap-panel does.";
+                    break;
+                case "Button10":
                     mainText.Text = "???";
                     break;
             }
@@ -101,8 +107,16 @@ namespace LearningWPF
                     break;
                 case "Button8":
                     Button8_Grid Button8_Grid = new Button8_Grid();
-                    await Task.Delay(95);
+                    await Task.Delay(195);
                     Button8_Grid.ShowDialog();
+                    break;
+                case "Button9":
+                    Button9_Stackpanel Button9_Stackpanel = new Button9_Stackpanel();
+                    Button9_Stackpanel.ShowDialog();
+                    break;
+                case "Button10":
+                    Button10_Dockpanel Button10_Dockpanel = new Button10_Dockpanel();
+                    Button10_Dockpanel.ShowDialog();
                     break;
             }
         }

@@ -74,6 +74,30 @@
             Canvas.Top="214"
             Canvas.Left="15">
         </Button>
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
+            x:Name="Button8"
+            Height="35"
+            Width="135"
+            Content="8. Grid"
+            FontWeight="Bold"
+            Canvas.Top="254"
+            Canvas.Left="15"/>
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
+            x:Name="Button9"
+            Height="35"
+            Width="170"
+            Content="9. Stackpanel and WrapPanel"
+            FontWeight="Bold"
+            Canvas.Top="294"
+            Canvas.Left="15"/>
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
+            x:Name="Button10"
+            Height="35"
+            Width="135"
+            Content="10. Dockpanel"
+            FontWeight="Bold"
+            Canvas.Top="334"
+            Canvas.Left="15"/>
 
         <TextBlock 
             x:Name="mainText"
@@ -86,13 +110,5 @@
             Canvas.Bottom="55"
             Canvas.Left="170"
             />
-        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
-            x:Name="Button8"
-            Height="35"
-            Width="135"
-            Content="8. Grid"
-            FontWeight="Bold"
-            Canvas.Top="254"
-            Canvas.Left="15"/>
     </Canvas>
 </Window>
