@@ -63,7 +63,7 @@ namespace LearningWPF
                     mainText.Text = "???";
                     break;
                 case "Button11":
-                    mainText.Text = "Simon GAME!";
+                    mainText.Text = "A randomized version of a simon game. you must click the correct buttons that light up which lights up randomly. it gets harder with each round.";
                     break;
             }
         }

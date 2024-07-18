@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -28,6 +29,8 @@ namespace LearningWPF
 
         public int counter = 1;
         public int round = 1;
+        public int numberCheck = 0;
+
         public List<int> lightedUpButtons = new List<int>();
         public List<int> userSelectedButtons = new List<int>();
 
@@ -47,6 +50,7 @@ namespace LearningWPF
                         topButton.Background = Brushes.Yellow;
                         lightedUpButtons.Add(1);
                         counter--;
+                        numberCheck++;
                         break;
                     case 2:
                         rightButton.Background = Brushes.LightGreen;
@@ -54,6 +58,7 @@ namespace LearningWPF
                         rightButton.Background = Brushes.Green;
                         lightedUpButtons.Add(2);
                         counter--;
+                        numberCheck++;
                         break;
                     case 3:
                         bottomButton.Background = Brushes.Pink;
@@ -61,21 +66,24 @@ namespace LearningWPF
                         bottomButton.Background = Brushes.HotPink;
                         lightedUpButtons.Add(3);
                         counter--;
+                        numberCheck++;
                         break;
                     case 4:
                         leftButton.Background = Brushes.LightBlue;
                         await Task.Delay(850);
                         leftButton.Background = Brushes.Blue;
                         lightedUpButtons.Add(4);
+                        numberCheck++;
                         counter--;
                         break;
                 }
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
+            numberCheck--;
 
             switch (button.Name)
             {
@@ -93,7 +101,24 @@ namespace LearningWPF
                     break;
             }
 
-            if (userSelectedButtons.SequenceEqual(lightedUpButtons)) { textt.Text = "win"; } else { textt.Text = "lose"; } 
+            if (numberCheck == 0)
+            {
+                if (userSelectedButtons.SequenceEqual(lightedUpButtons))
+                {
+                    textt.Text = "Correct!";
+                    await Task.Delay(850);
+                    textt.Text = "";
+                    round++;
+                    counter = round;
+                    userSelectedButtons.Clear();
+                    lightedUpButtons.Clear();
+                    RoundStart();
+                }
+                else
+                {
+                    textt.Text = "Incorrect!";
+                }
+            }
         }
     }
 }

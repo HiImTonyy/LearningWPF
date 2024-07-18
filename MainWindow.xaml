@@ -101,8 +101,8 @@
         <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
             x:Name="Button11"
             Height="35"
-            Width="135"
-            Content="11. Simon Game"
+            Width="182"
+            Content="11. Randomized Simon Game"
             FontWeight="Bold"
             Canvas.Top="374"
             Canvas.Left="15"/>
