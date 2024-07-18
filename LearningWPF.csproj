@@ -59,6 +59,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Button11_Simon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Button1_LearningTextblocks.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -105,6 +109,9 @@
     </Compile>
     <Compile Include="Button10_Dockpanel.xaml.cs">
       <DependentUpon>Button10_Dockpanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Button11_Simon.xaml.cs">
+      <DependentUpon>Button11_Simon.xaml</DependentUpon>
     </Compile>
     <Compile Include="Button1_LearningTextblocks.xaml.cs">
       <DependentUpon>Button1_LearningTextblocks.xaml</DependentUpon>

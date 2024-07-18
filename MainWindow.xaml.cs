@@ -62,6 +62,9 @@ namespace LearningWPF
                 case "Button10":
                     mainText.Text = "???";
                     break;
+                case "Button11":
+                    mainText.Text = "Simon GAME!";
+                    break;
             }
         }
 
@@ -117,6 +120,10 @@ namespace LearningWPF
                 case "Button10":
                     Button10_Dockpanel Button10_Dockpanel = new Button10_Dockpanel();
                     Button10_Dockpanel.ShowDialog();
+                    break;
+                case "Button11":
+                    Button11_Simon Button11_Simon = new Button11_Simon();
+                    Button11_Simon.ShowDialog();
                     break;
             }
         }
