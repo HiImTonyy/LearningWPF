@@ -46,7 +46,7 @@ namespace LearningWPF
                 {
                     case 1:
                         topButton.Background = Brushes.LightYellow;
-                        await Task.Delay(850);
+                        await Task.Delay(350);
                         topButton.Background = Brushes.Yellow;
                         lightedUpButtons.Add(1);
                         counter--;
@@ -54,7 +54,7 @@ namespace LearningWPF
                         break;
                     case 2:
                         rightButton.Background = Brushes.LightGreen;
-                        await Task.Delay(850);
+                        await Task.Delay(830);
                         rightButton.Background = Brushes.Green;
                         lightedUpButtons.Add(2);
                         counter--;
@@ -62,7 +62,7 @@ namespace LearningWPF
                         break;
                     case 3:
                         bottomButton.Background = Brushes.Pink;
-                        await Task.Delay(850);
+                        await Task.Delay(350);
                         bottomButton.Background = Brushes.HotPink;
                         lightedUpButtons.Add(3);
                         counter--;
@@ -70,7 +70,7 @@ namespace LearningWPF
                         break;
                     case 4:
                         leftButton.Background = Brushes.LightBlue;
-                        await Task.Delay(850);
+                        await Task.Delay(350);
                         leftButton.Background = Brushes.Blue;
                         lightedUpButtons.Add(4);
                         numberCheck++;
@@ -105,18 +105,19 @@ namespace LearningWPF
             {
                 if (userSelectedButtons.SequenceEqual(lightedUpButtons))
                 {
-                    textt.Text = "Correct!";
-                    await Task.Delay(850);
-                    textt.Text = "";
-                    round++;
-                    counter = round;
+                    decision.Text = "Correct!";
+                    await Task.Delay(950);
+                    decision.Text = "";
                     userSelectedButtons.Clear();
                     lightedUpButtons.Clear();
+                    round++;
+                    counter = round;
+                    roundText.Text = " Round: " + round.ToString();  
                     RoundStart();
                 }
                 else
                 {
-                    textt.Text = "Incorrect!";
+                    decision.Text = "Incorrect!";
                 }
             }
         }

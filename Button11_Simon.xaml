@@ -41,6 +41,21 @@
             Grid.Row="2"
             Grid.Column="1">
         </Button>
-        <TextBlock x:Name="textt" Grid.Row="1" Grid.Column="1" FontSize="24" Foreground="White" Text=""></TextBlock>
+        <TextBlock 
+            x:Name="decision" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center"
+            Grid.Row="1" 
+            Grid.Column="1" 
+            FontSize="24" 
+            Foreground="White" 
+            Text="Correct"></TextBlock>
+        <TextBlock 
+            x:Name="roundText" 
+            Grid.Row="1" 
+            Grid.Column="1" 
+            FontSize="24" 
+            Foreground="White" 
+            Text=" Round: 1"></TextBlock>
     </Grid>
 </Window>
