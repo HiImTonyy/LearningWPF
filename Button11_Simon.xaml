@@ -19,19 +19,28 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Border Background="Blue"
-                Grid.Row="1">
-        </Border>
-        <Border Background="Yellow"
-                Grid.Column="1">
-        </Border>
-        <Border Background="Green"
-                Grid.Column="2"
-                Grid.Row="1">
-        </Border>
-        <Border Background="Pink"
-                Grid.Row="2"
-                Grid.Column="1">
-        </Border>
+        <Button Click="Button_Click"
+            x:Name="leftButton"
+            Background="Blue"
+            Grid.Row="1">
+        </Button>
+        <Button Click="Button_Click"
+            x:Name="topButton" 
+            Background="Yellow"
+            Grid.Column="1">
+        </Button>
+        <Button Click="Button_Click"
+            x:Name="rightButton"
+            Background="Green"
+            Grid.Column="2"
+            Grid.Row="1">
+        </Button>
+        <Button Click="Button_Click"
+            x:Name="bottomButton"
+            Background="HotPink"
+            Grid.Row="2"
+            Grid.Column="1">
+        </Button>
+        <TextBlock x:Name="textt" Grid.Row="1" Grid.Column="1" FontSize="24" Foreground="White" Text=""></TextBlock>
     </Grid>
 </Window>
