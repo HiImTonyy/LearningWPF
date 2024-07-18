@@ -59,7 +59,7 @@
             FontWeight="Black">
             <TextBlock
                 TextWrapping="Wrap"
-                Text="Please send us an email ASAP and we will restore any missing items or gold. We will also let you decide what to do about the person who hacked your account. we can either I.P and hardware the hacker, investigate where the hacker lives and sue them, or have the hacker gang-stalked digitally for 6 months straight."
+                Text="Please send us an email ASAP and we will restore any missing items or gold. We will also let you decide what to do about the person who hacked your account. we can either I.P ban and hardware ban the hacker, investigate where the hacker lives and sue them, or have the hacker gang-stalked digitally for 6 months straight."
                 FontSize="17"
                 Width="435"
                 FontWeight="Light"/>
