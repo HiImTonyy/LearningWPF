@@ -38,6 +38,7 @@ namespace LearningWPF
         {
             while (counter > 0)
             {
+                decision.Text = "Randomizing buttons...";
                 await Task.Delay(1500);
                 Random roll = new Random();
                 int number = roll.Next(1, 5);
@@ -78,6 +79,8 @@ namespace LearningWPF
                         break;
                 }
             }
+
+            decision.Text = "";
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)
@@ -118,8 +121,29 @@ namespace LearningWPF
                 else
                 {
                     decision.Text = "Incorrect!";
+                    await Task.Delay(1950);
+                    counter = 1;
+                    round = 1;
+                    numberCheck = 0;
+                    userSelectedButtons.Clear();
+                    lightedUpButtons.Clear();
+                    decision.Text = "";
+                    roundText.Text = " Round: " + round.ToString();
+                    RoundStart();
                 }
             }
+        }
+
+        public void Failure()
+        {
+            counter = 1;
+            round = 1;
+            numberCheck = 0;
+            userSelectedButtons.Clear();
+            lightedUpButtons.Clear();
+            decision.Text = "";
+            roundText.Text = " Round: " + round.ToString();
+            RoundStart();
         }
     }
 }

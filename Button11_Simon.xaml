@@ -49,11 +49,12 @@
             Grid.Column="1" 
             FontSize="24" 
             Foreground="White" 
-            Text="Correct"></TextBlock>
+            Text=""></TextBlock>
         <TextBlock 
             x:Name="roundText" 
             Grid.Row="1" 
-            Grid.Column="1" 
+            Grid.Column="1"
+            HorizontalAlignment="Center"
             FontSize="24" 
             Foreground="White" 
             Text=" Round: 1"></TextBlock>
