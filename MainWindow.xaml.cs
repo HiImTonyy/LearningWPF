@@ -60,10 +60,13 @@ namespace LearningWPF
                     mainText.Text = "Learned more about the stackpanal as well as what the wrap-panel does.";
                     break;
                 case "Button10":
-                    mainText.Text = "???";
+                    mainText.Text = "Learned a bit about the dockpanel.";
                     break;
                 case "Button11":
                     mainText.Text = "A randomized version of a simon game. you must click the correct buttons that light up which lights up randomly. it gets harder with each round.";
+                    break;
+                case "Button12":
+                    mainText.Text = "???";
                     break;
             }
         }
@@ -124,6 +127,10 @@ namespace LearningWPF
                 case "Button11":
                     Button11_Simon Button11_Simon = new Button11_Simon();
                     Button11_Simon.ShowDialog();
+                    break;
+                case "Button12":
+                    Button12_MenuControl Button12_MenuControl = new Button12_MenuControl();
+                    Button12_MenuControl.ShowDialog();
                     break;
             }
         }

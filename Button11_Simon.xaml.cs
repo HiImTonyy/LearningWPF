@@ -55,7 +55,7 @@ namespace LearningWPF
                         break;
                     case 2:
                         rightButton.Background = Brushes.LightGreen;
-                        await Task.Delay(830);
+                        await Task.Delay(350);
                         rightButton.Background = Brushes.Green;
                         lightedUpButtons.Add(2);
                         counter--;

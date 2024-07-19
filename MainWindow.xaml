@@ -106,6 +106,14 @@
             FontWeight="Bold"
             Canvas.Top="374"
             Canvas.Left="15"/>
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
+            x:Name="Button12"
+            Height="35"
+            Width="135"
+            Content="12. Menu Control"
+            FontWeight="Bold"
+            Canvas.Top="414"
+            Canvas.Left="15" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
         <TextBlock 
             x:Name="mainText"
