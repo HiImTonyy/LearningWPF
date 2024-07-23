@@ -41,5 +41,15 @@ namespace LearningWPF
                 if (mainText != null) { mainText.FontSize = temp; }
             }
         }
+
+        private void menuBold_Checked(object sender, RoutedEventArgs e)
+        {
+            mainText.FontWeight = FontWeights.Bold;
+        }
+
+        private void menuBold_Unchecked(object sender, RoutedEventArgs e)
+        {
+            mainText.FontWeight = FontWeights.Normal;
+        }
     }
 }

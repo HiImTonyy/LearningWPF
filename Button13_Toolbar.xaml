@@ -31,6 +31,12 @@
                 </ComboBox>
             </ToolBar>
         </ToolBarTray>
-        <TextBox x:Name="mainText"></TextBox>
+        <TextBox x:Name="mainText">
+            <TextBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="menuBold" IsCheckable="True" Checked="menuBold_Checked" Unchecked="menuBold_Unchecked" Header="Bold"></MenuItem>
+                </ContextMenu>
+            </TextBox.ContextMenu>
+        </TextBox>
     </DockPanel>
 </Window>
