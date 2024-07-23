@@ -66,6 +66,9 @@ namespace LearningWPF
                     mainText.Text = "A randomized version of a simon game. you must click the correct buttons that light up which lights up randomly. it gets harder with each round.";
                     break;
                 case "Button12":
+                    mainText.Text = "Learned a tiny amount of the Menu Control.";
+                    break;
+                case "Button13":
                     mainText.Text = "???";
                     break;
             }
@@ -131,6 +134,10 @@ namespace LearningWPF
                 case "Button12":
                     Button12_MenuControl Button12_MenuControl = new Button12_MenuControl();
                     Button12_MenuControl.ShowDialog();
+                    break;
+                case "Button13":
+                    Button13_Toolbar Button13_Toolbar = new Button13_Toolbar();
+                    Button13_Toolbar.ShowDialog();
                     break;
             }
         }

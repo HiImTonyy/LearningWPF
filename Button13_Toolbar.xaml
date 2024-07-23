@@ -1,0 +1,36 @@
+﻿<Window x:Class="LearningWPF.Button13_Toolbar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearningWPF"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Button13_Toolbar" Height="480" Width="520"
+        ResizeMode="NoResize">
+    <DockPanel>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button ToolTip="Burns your text to the ground!" Click="Button_Click">
+                    <Image Width="20" Source="https://icons.iconarchive.com/icons/bootstrap/bootstrap/256/Bootstrap-fire-icon.png"/>
+                </Button>
+                <Separator></Separator>
+                <Label FontSize="14">Font Size</Label>
+                <ComboBox ToolTip="Are you retarded? read the label!" SelectionChanged="ComboBox_SelectionChanged">
+                    <ComboBoxItem>7</ComboBoxItem>
+                    <ComboBoxItem>10</ComboBoxItem>
+                    <ComboBoxItem IsSelected="True">13</ComboBoxItem>
+                    <ComboBoxItem>15</ComboBoxItem>
+                    <ComboBoxItem>18</ComboBoxItem>
+                    <ComboBoxItem>21</ComboBoxItem>
+                    <ComboBoxItem>25</ComboBoxItem>
+                    <ComboBoxItem>34</ComboBoxItem>
+                    <ComboBoxItem>40</ComboBoxItem>
+                    <ComboBoxItem>49</ComboBoxItem>
+                    <ComboBoxItem>60</ComboBoxItem>
+                </ComboBox>
+            </ToolBar>
+        </ToolBarTray>
+        <TextBox x:Name="mainText"></TextBox>
+    </DockPanel>
+</Window>
