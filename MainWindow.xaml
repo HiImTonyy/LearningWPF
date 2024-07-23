@@ -117,8 +117,8 @@
         <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
             x:Name="Button13"
             Height="35"
-            Width="182"
-            Content="13. Toolbar and Context Menu"
+            Width="223"
+            Content="13. Toolbar, Context Menu, Status Bar"
             FontWeight="Bold"
             Canvas.Top="454"
             Canvas.Left="15" HorizontalAlignment="Left" VerticalAlignment="Center"/>

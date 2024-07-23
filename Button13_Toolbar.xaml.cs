@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -50,6 +51,20 @@ namespace LearningWPF
         private void menuBold_Unchecked(object sender, RoutedEventArgs e)
         {
             mainText.FontWeight = FontWeights.Normal;
+        }
+
+        private void Increase_Progress(object sender, RoutedEventArgs e)
+        {
+            progressBar.Value += 10;
+
+            if (progressBar.Value >= 100) { statusText.Content = "Complete!"; }
+        }
+
+        private void Decrease_Progress(object sender, RoutedEventArgs e)
+        {
+            progressBar.Value -= 10;
+
+            if (progressBar.Value <= 99) { statusText.Content = "Downloading..."; }
         }
     }
 }

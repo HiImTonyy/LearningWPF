@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:LearningWPF"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Button13_Toolbar" Height="480" Width="520"
+        Title="Button13_Toolbar" Height="500" Width="600"
         ResizeMode="NoResize">
-    <DockPanel>
+    <DockPanel LastChildFill="False">
         <ToolBarTray DockPanel.Dock="Top">
             <ToolBar>
                 <Button ToolTip="Burns your text to the ground!" Click="Button_Click">
@@ -29,14 +29,25 @@
                     <ComboBoxItem>49</ComboBoxItem>
                     <ComboBoxItem>60</ComboBoxItem>
                 </ComboBox>
+                <Separator></Separator>
+                <Button Click="Increase_Progress" Margin="0,0,10,0">Status Bar++</Button>
+                <Button Click="Decrease_Progress">Status Bar--</Button>
             </ToolBar>
         </ToolBarTray>
-        <TextBox x:Name="mainText">
+        <TextBox DockPanel.Dock="Top" Width="500" Height="400" x:Name="mainText">
             <TextBox.ContextMenu>
                 <ContextMenu>
                     <MenuItem x:Name="menuBold" IsCheckable="True" Checked="menuBold_Checked" Unchecked="menuBold_Unchecked" Header="Bold"></MenuItem>
                 </ContextMenu>
             </TextBox.ContextMenu>
         </TextBox>
+        <StatusBar  DockPanel.Dock="Bottom">
+            <StatusBarItem x:Name="statusText">
+                Downloading...
+            </StatusBarItem>
+            <StatusBarItem>
+                <ProgressBar x:Name="progressBar" Width="466" Height="10"></ProgressBar>
+            </StatusBarItem>
+        </StatusBar>
     </DockPanel>
 </Window>
