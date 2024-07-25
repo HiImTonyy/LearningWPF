@@ -71,6 +71,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Button14_OpenFile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Button1_LearningTextblocks.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -126,6 +130,9 @@
     </Compile>
     <Compile Include="Button13_Toolbar.xaml.cs">
       <DependentUpon>Button13_Toolbar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Button14_OpenFile.xaml.cs">
+      <DependentUpon>Button14_OpenFile.xaml</DependentUpon>
     </Compile>
     <Compile Include="Button1_LearningTextblocks.xaml.cs">
       <DependentUpon>Button1_LearningTextblocks.xaml</DependentUpon>
