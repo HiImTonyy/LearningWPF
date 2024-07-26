@@ -142,5 +142,13 @@
             Canvas.Bottom="55"
             Canvas.Left="170"
             />
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
+            x:Name="Button15"
+            Height="35"
+            Width="135"
+            Content="15. Databinding 2.0"
+            FontWeight="Bold"
+            Canvas.Top="54"
+            Canvas.Left="264" HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Canvas>
 </Window>

@@ -72,7 +72,10 @@ namespace LearningWPF
                     mainText.Text = "Learned a bit about the toolbar, context menu, and progress bar.";
                     break;
                 case "Button14":
-                    mainText.Text = "You can't keep doing this! You can't keep doing shitty things and then feel bad about yourself like that makes it okay! You need to be better! Listen, just stop. You are all the things that are wrong with you. It's not the alcohol, or the drugs, or any of the shitty things that happened to you in your career, or when you were a kid. It's you. Okay? It's you. Fuck, man, what else is there to say?";
+                    mainText.Text = "Learned about how to open and save a file.";
+                    break;
+                case "Button15":
+                    mainText.Text = "???";
                     break;
             }
         }
@@ -145,6 +148,10 @@ namespace LearningWPF
                 case "Button14":
                     Button14_OpenFile Button14_OpenFile = new Button14_OpenFile();
                     Button14_OpenFile.ShowDialog();
+                    break;
+                case "Button15":
+                    Button15_Databinding2 Button15_Databinding2 = new Button15_Databinding2();
+                    Button15_Databinding2.ShowDialog();
                     break;
             }
         }

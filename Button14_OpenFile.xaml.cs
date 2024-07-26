@@ -37,7 +37,7 @@ namespace LearningWPF
 
             if (openFileDialog.ShowDialog() == true) 
             {
-                mainTextBox.Text = File.ReadAllText(openFileDialog.FileName);
+                mainTextBox.Text = File.ReadAllText(openFileDialog.FileName) + "hehehehe :)";
             }
         }
 
