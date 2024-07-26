@@ -20,6 +20,8 @@ namespace LearningWPF
     /// </summary>
     public partial class Button15_Databinding2 : Window
     {
+
+        public int number = 10;
         public ObservableCollection<int> avalibleNumbers { get; set; }
         public Button15_Databinding2()
         {
@@ -36,14 +38,16 @@ namespace LearningWPF
             //this.DataContext = this;
         }
 
-        private void AddWord(object sender, RoutedEventArgs e)
+        private void AddNumber(object sender, RoutedEventArgs e)
         {
-            avalibleNumbers.Add(1);
+            avalibleNumbers.Add(number);
+            number++;
         }
 
-        private void DeleteWord(object sender, RoutedEventArgs e)
+        private void DeleteNumber(object sender, RoutedEventArgs e)
         {
             avalibleNumbers.RemoveAt(0);
+            number--;
         }
     }
 }

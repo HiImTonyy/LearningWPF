@@ -75,7 +75,10 @@ namespace LearningWPF
                     mainText.Text = "Learned about how to open and save a file.";
                     break;
                 case "Button15":
-                    mainText.Text = "???";
+                    mainText.Text = "Learned a bit more about databinding.";
+                    break;
+                case "Button16":
+                    mainText.Text = "????";
                     break;
             }
         }
@@ -152,6 +155,10 @@ namespace LearningWPF
                 case "Button15":
                     Button15_Databinding2 Button15_Databinding2 = new Button15_Databinding2();
                     Button15_Databinding2.ShowDialog();
+                    break;
+                case "Button16":
+                    Button16_DatabindingCombo Button16_DatabindingCombo = new Button16_DatabindingCombo();
+                    Button16_DatabindingCombo.ShowDialog();
                     break;
             }
         }

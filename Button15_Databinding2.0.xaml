@@ -22,7 +22,7 @@
 
         <Button Height="30"
                 Width="60" 
-                Click="AddWord" 
+                Click="AddNumber" 
                 Margin="-100,0,0,80"
                 Content="Add"
                 VerticalAlignment="Bottom"
@@ -30,7 +30,7 @@
         </Button>
         <Button Height="30" 
                 Width="60" 
-                Click="DeleteWord" 
+                Click="DeleteNumber" 
                 Margin="100,0,0,80"
                 Content="Remove"
                 VerticalAlignment="Bottom">

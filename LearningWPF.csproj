@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Rarity.cs" />
     <Page Include="Button10_Dockpanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -76,6 +77,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Button15_Databinding2.0.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Button16_DatabindingCombo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -140,6 +145,9 @@
     </Compile>
     <Compile Include="Button15_Databinding2.0.xaml.cs">
       <DependentUpon>Button15_Databinding2.0.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Button16_DatabindingCombo.xaml.cs">
+      <DependentUpon>Button16_DatabindingCombo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Button1_LearningTextblocks.xaml.cs">
       <DependentUpon>Button1_LearningTextblocks.xaml</DependentUpon>
