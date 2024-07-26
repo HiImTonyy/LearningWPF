@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
+
 
 namespace LearningWPF
 {
@@ -22,6 +25,15 @@ namespace LearningWPF
         public Button14_OpenFile()
         {
             InitializeComponent();
+        }
+
+        private void openFile_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true) 
+            {
+                mainTextBox.Text = File.ReadAllText(openFileDialog.FileName);
+            }
         }
     }
 }

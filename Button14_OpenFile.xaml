@@ -9,6 +9,23 @@
         Title="Button14_OpenFile" Height="620" Width="1180"
         ResizeMode="NoResize">
     <Grid>
-        
+        <Button 
+            Name="openFile"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Content="Open .txt file"
+            Margin="0,60,0,0"
+            FontSize="20"
+            FontWeight="Bold"
+            Click="openFile_Click">
+        </Button>
+        <TextBox
+            Name="mainTextBox"
+            VerticalAlignment="Center"
+            Height="300"
+            Width="650"
+            FontSize="16"
+            VerticalScrollBarVisibility="Visible">
+        </TextBox>
     </Grid>
 </Window>
