@@ -1,0 +1,67 @@
+﻿<Window x:Class="LearningWPF.Button17_DatabindListToClass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearningWPF"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="List to Class" Height="675" Width="1150"
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+        <ObjectDataProvider x:Key="odpWeapons"
+                            ObjectType="{x:Type local:Weapons}"
+                            MethodName="GetWeapons">
+        </ObjectDataProvider>
+        <Style x:Key="RarityColor" TargetType="ListBoxItem">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Type}" Value="Common">
+                    <Setter Property="Foreground" Value="Gray"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Type}" Value="Uncommon">
+                    <Setter Property="Foreground" Value="DarkGreen"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Type}" Value="Rare">
+                    <Setter Property="Foreground" Value="Blue"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Type}" Value="Legendary">
+                    <Setter Property="Foreground" Value="DarkMagenta"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Type}" Value="Celestial">
+                    <Setter Property="Foreground" Value="LightSalmon"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Type}" Value="Souverain">
+                    <Setter Property="Foreground" Value="GoldenRod"></Setter>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+               Content="Weapon Drops"
+               FontSize="18"
+               FontWeight="Black"/>
+        <ListBox
+            Grid.Row="1"
+            FontWeight="Bold"
+            ItemsSource="{Binding Source={StaticResource odpWeapons}}"
+            ItemContainerStyle="{StaticResource RarityColor}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderThickness="0,0,0,5" BorderBrush="Black">
+                        <StackPanel>
+                            <TextBlock FontSize="23" Text="{Binding WeaponName}"/>
+                            <TextBlock FontSize="17" Text="{Binding Type}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

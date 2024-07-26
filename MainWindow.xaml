@@ -145,7 +145,15 @@
             Content="16. Databinding Combobox"
             FontWeight="Bold"
             Canvas.Top="94"
-            Canvas.Left="264" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            Canvas.Left="264"/>
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
+            x:Name="Button17"
+            Height="35"
+            Width="163"
+            Content="17. Databind list to class"
+            FontWeight="Bold"
+            Canvas.Top="134"
+            Canvas.Left="264"/>
 
         <TextBlock 
             x:Name="mainText"

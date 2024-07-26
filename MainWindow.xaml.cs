@@ -78,7 +78,10 @@ namespace LearningWPF
                     mainText.Text = "Learned a bit more about databinding.";
                     break;
                 case "Button16":
-                    mainText.Text = "????";
+                    mainText.Text = "Learned a bit about the combobox.";
+                    break;
+                case "Button17":
+                    mainText.Text = "???";
                     break;
             }
         }
@@ -159,6 +162,10 @@ namespace LearningWPF
                 case "Button16":
                     Button16_DatabindingCombo Button16_DatabindingCombo = new Button16_DatabindingCombo();
                     Button16_DatabindingCombo.ShowDialog();
+                    break;
+                case "Button17":
+                    Button17_DatabindListToClass Button17_DatabindListToClass = new Button17_DatabindListToClass();
+                    Button17_DatabindListToClass.ShowDialog();
                     break;
             }
         }
