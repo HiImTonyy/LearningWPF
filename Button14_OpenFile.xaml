@@ -6,26 +6,34 @@
         xmlns:local="clr-namespace:LearningWPF"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Button14_OpenFile" Height="620" Width="1180"
+        Title="Button14_OpenFile" Height="675" Width="1180"
         ResizeMode="NoResize">
     <Grid>
         <Button 
             Name="openFile"
-            VerticalAlignment="Top"
-            HorizontalAlignment="Center"
+            HorizontalAlignment="Left"
             Content="Open .txt file"
-            Margin="0,60,0,0"
+            Margin="20,0,0,260"
             FontSize="20"
             FontWeight="Bold"
-            Click="openFile_Click">
+            Click="openFile_Click"
+            Height="30">
         </Button>
+        <Button 
+            x:Name="saveFile"
+            HorizontalAlignment="Left"
+            Content="Save .txt file"
+            Margin="180,0,0,260"
+            FontSize="20"
+            FontWeight="Bold"
+            Click="saveFile_Click"
+            Height="30"/>
         <TextBox
             Name="mainTextBox"
             VerticalAlignment="Center"
+            Margin="10,70,10,0"
             Height="300"
-            Width="650"
             FontSize="16"
-            VerticalScrollBarVisibility="Visible">
-        </TextBox>
+            VerticalScrollBarVisibility="Visible"/>
     </Grid>
 </Window>

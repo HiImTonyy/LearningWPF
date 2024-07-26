@@ -30,9 +30,25 @@ namespace LearningWPF
         private void openFile_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            openFileDialog.Filter = "Text Files (*.txt)|*.txt";
+
             if (openFileDialog.ShowDialog() == true) 
             {
                 mainTextBox.Text = File.ReadAllText(openFileDialog.FileName);
+            }
+        }
+
+        private void saveFile_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+
+            saveFileDialog.Filter = "Text Files (*.txt)|*.txt";
+            if(saveFileDialog.ShowDialog() == true) 
+            {
+                File.WriteAllText(saveFileDialog.FileName, mainTextBox.Text);
             }
         }
     }
