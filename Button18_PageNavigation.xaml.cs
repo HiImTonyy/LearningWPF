@@ -38,5 +38,21 @@ namespace LearningWPF
         {
             MainWindowFrame.Content = SecondPage;
         }
+
+        private void Forward_Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainWindowFrame.NavigationService.CanGoBack)
+            {
+                MainWindowFrame.NavigationService.GoBack();
+            }
+        }
+
+        private void Back_Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainWindowFrame.NavigationService.CanGoForward)
+            {
+                MainWindowFrame.NavigationService.GoForward();
+            }
+        }
     }
 }

@@ -14,7 +14,7 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="110"></ColumnDefinition>
+            <ColumnDefinition Width="160"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Row="0"
@@ -23,16 +23,32 @@
             <Button
                 Width="80"
                 Height="25"
-                Margin="10,10,0,0"
+                Margin="30,10,0,0"
                 Content="Button1"
                 Click="Button_Click_1">
             </Button>
             <Button
                 Width="80"
                 Height="25"
-                Margin="10,10,0,0"
+                Margin="30,10,0,0"
                 Content="Button2"
                 Click="Button_Click_2">
+            </Button>
+            <Button
+                Width="25"
+                Height="25"
+                Margin="-75,-60,0,0"
+                Content="&lt;"
+                Click="Back_Button_Click"
+                Panel.ZIndex="-1">
+            </Button>
+            <Button
+           Width="25"
+           Height="25"
+           Margin="135,-60,0,0"
+           Content="&gt;"
+           Click="Forward_Button_Click"
+           Panel.ZIndex="-1">
             </Button>
         </StackPanel>
         <Frame 

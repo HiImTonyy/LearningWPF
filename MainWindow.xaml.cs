@@ -84,7 +84,7 @@ namespace LearningWPF
                     mainText.Text = "Learned a bit about databinding classes. Binded a list from a class and also added colors depending on the rarity.";
                     break;
                 case "Button18":
-                    mainText.Text = "???";
+                    mainText.Text = "Learned a bit about page navigation";
                     break;
             }
         }
