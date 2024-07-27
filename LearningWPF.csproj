@@ -61,6 +61,9 @@
     <Compile Include="Button18_PageNavigation.xaml.cs">
       <DependentUpon>Button18_PageNavigation.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Button19_DelegatesAndEvents.xaml.cs">
+      <DependentUpon>Button19_DelegatesAndEvents.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageNavigationPages\Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
@@ -68,6 +71,9 @@
       <DependentUpon>Page2.xaml</DependentUpon>
     </Compile>
     <Compile Include="Rarity.cs" />
+    <Compile Include="ValueUC.xaml.cs">
+      <DependentUpon>ValueUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Weapon.cs" />
     <Compile Include="Weapons.cs" />
     <Page Include="Button10_Dockpanel.xaml">
@@ -103,6 +109,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Button18_PageNavigation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Button19_DelegatesAndEvents.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -207,6 +217,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageNavigationPages\Page2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ValueUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

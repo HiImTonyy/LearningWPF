@@ -84,7 +84,10 @@ namespace LearningWPF
                     mainText.Text = "Learned a bit about databinding classes. Binded a list from a class and also added colors depending on the rarity.";
                     break;
                 case "Button18":
-                    mainText.Text = "Learned a bit about page navigation";
+                    mainText.Text = "Learned a bit about page navigation.";
+                    break;
+                case "Button19":
+                    mainText.Text = "Learned a bit about delegates and events while also learning nothing.";
                     break;
             }
         }
@@ -173,6 +176,10 @@ namespace LearningWPF
                 case "Button18":
                     Button18_PageNavigation Button18_PageNavigation = new Button18_PageNavigation();
                     Button18_PageNavigation.ShowDialog();
+                    break;
+                case "Button19":
+                    Button19_DelegatesAndEvents Button19_DelegatesAndEvents = new Button19_DelegatesAndEvents();
+                    Button19_DelegatesAndEvents.ShowDialog();
                     break;
             }
         }
