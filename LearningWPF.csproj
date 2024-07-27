@@ -64,6 +64,9 @@
     <Compile Include="Button19_DelegatesAndEvents.xaml.cs">
       <DependentUpon>Button19_DelegatesAndEvents.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Button20_Animations.xaml.cs">
+      <DependentUpon>Button20_Animations.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageNavigationPages\Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
@@ -117,6 +120,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Button1_LearningTextblocks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Button20_Animations.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

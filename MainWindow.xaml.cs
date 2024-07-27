@@ -89,6 +89,9 @@ namespace LearningWPF
                 case "Button19":
                     mainText.Text = "Learned a bit about delegates and events while also learning nothing.";
                     break;
+                case "Button20":
+                    mainText.Text = "Finally to something actually fun!";
+                    break;
             }
         }
 
@@ -180,6 +183,10 @@ namespace LearningWPF
                 case "Button19":
                     Button19_DelegatesAndEvents Button19_DelegatesAndEvents = new Button19_DelegatesAndEvents();
                     Button19_DelegatesAndEvents.ShowDialog();
+                    break;
+                case "Button20":
+                    Button20_Animations Button20_Animations = new Button20_Animations();
+                    Button20_Animations.ShowDialog();
                     break;
             }
         }
