@@ -8,7 +8,7 @@ namespace LearningWPF
 {
     public enum Rarity
     {
-        //50%      25%    15%      7%        2.5%       0.5%
+        //50%      25%    15%      7.4%        2.5%       0.1%
         Common, Uncommon, Rare, Legendary, Celestial, Souverain
     }
 }

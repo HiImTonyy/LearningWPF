@@ -58,6 +58,15 @@
     <Compile Include="Button17_DatabindListToClass.xaml.cs">
       <DependentUpon>Button17_DatabindListToClass.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Button18_PageNavigation.xaml.cs">
+      <DependentUpon>Button18_PageNavigation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageNavigationPages\Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageNavigationPages\Page2.xaml.cs">
+      <DependentUpon>Page2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Rarity.cs" />
     <Compile Include="Weapon.cs" />
     <Compile Include="Weapons.cs" />
@@ -90,6 +99,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Button17_DatabindListToClass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Button18_PageNavigation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -189,6 +202,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PageNavigationPages\Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageNavigationPages\Page2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
