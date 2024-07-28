@@ -92,6 +92,9 @@ namespace LearningWPF
                 case "Button20":
                     mainText.Text = "Finally to something actually fun!";
                     break;
+                case "Button21":
+                    mainText.Text = "Instead of using XAML, the animations will be played using CSharp.";
+                    break;
             }
         }
 
@@ -187,6 +190,10 @@ namespace LearningWPF
                 case "Button20":
                     Button20_Animations Button20_Animations = new Button20_Animations();
                     Button20_Animations.ShowDialog();
+                    break;
+                case "Button21":
+                    Button21_CSharpAnimations Button21_CSharpAnimations = new Button21_CSharpAnimations();
+                    Button21_CSharpAnimations.ShowDialog();
                     break;
             }
         }

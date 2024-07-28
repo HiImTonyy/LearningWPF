@@ -41,6 +41,6 @@
                 </TextBlock.RenderTransform>
             </TextBlock>
         </Grid>
-        <Label x:Name="mainLabel" Visibility="Hidden" FontSize="27" FontWeight="Bold" Margin="510,0,0,0">Fuck.</Label>
+        <Label  x:Name="mainLabel" Visibility="Hidden" FontSize="27" FontWeight="Bold" Margin="510,0,0,0">Fuck.</Label>
     </StackPanel>
 </Window>

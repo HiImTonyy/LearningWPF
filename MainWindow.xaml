@@ -178,6 +178,14 @@
             FontWeight="Bold"
             Canvas.Top="254"
             Canvas.Left="264"/>
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
+            x:Name="Button21"
+            Height="35"
+            Width="163"
+            Content="21. CSharp Animations"
+            FontWeight="Bold"
+            Canvas.Top="294"
+            Canvas.Left="264" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
         <TextBlock 
             x:Name="mainText"
