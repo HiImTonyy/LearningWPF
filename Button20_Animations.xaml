@@ -8,30 +8,29 @@
         WindowStartupLocation="CenterScreen"
         Title="Animations" Height="675" Width="1120"
         ResizeMode="NoResize">
-    <Grid>
-        <Grid.Triggers>
-            <EventTrigger RoutedEvent="Loaded">
-                <BeginStoryboard>
-                    <Storyboard>
-                        <DoubleAnimation From="0"
-                                         To="1"
-                                         Duration="0:0:3"
-                                         Storyboard.TargetProperty="Opacity"
-                                         >
-                        </DoubleAnimation>
-                    </Storyboard>
-                </BeginStoryboard>
-            </EventTrigger>
-        </Grid.Triggers>
-
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+    <StackPanel VerticalAlignment="Center">
+        <Grid>
+            <Grid.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation From="0"
+                                      To="1"
+                                      Duration="0:0:3"
+                                      Storyboard.TargetProperty="Opacity"
+                                      Completed="DoubleAnimation_Completed">
+                            </DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Grid.Triggers>
             <TextBlock x:Name="mrSmile" 
-                       Text=":)"
-                       FontSize="100"
-                       FontWeight="Black" 
-                       RenderTransformOrigin="0.5,0.5" 
-                       Height="132" 
-                       Width="78">
+                    Text=":)"
+                    FontSize="100"
+                    FontWeight="Black" 
+                    RenderTransformOrigin="0.5,0.5" 
+                    Height="132" 
+                    Width="78">
                 <TextBlock.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -41,10 +40,7 @@
                     </TransformGroup>
                 </TextBlock.RenderTransform>
             </TextBlock>
-
-            <Label Content="Fuck."
-                   FontSize="75" 
-                   Margin="-10,88,10,-88"/>
-        </StackPanel>
-    </Grid>
+        </Grid>
+        <Label x:Name="mainLabel" Visibility="Hidden" FontSize="27" FontWeight="Bold" Margin="510,0,0,0">Fuck.</Label>
+    </StackPanel>
 </Window>

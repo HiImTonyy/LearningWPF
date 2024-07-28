@@ -23,5 +23,10 @@ namespace LearningWPF
         {
             InitializeComponent();
         }
+
+        private void DoubleAnimation_Completed(object sender, EventArgs e)
+        {
+            if (mrSmile.Opacity == 1) { mainLabel.Visibility = Visibility.Visible; }
+        }
     }
 }
