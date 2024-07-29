@@ -24,7 +24,7 @@ namespace LearningWPF
         {
             InitializeComponent();
 
-            mainList = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 23, 24, 94, 95, 110, 112};
+            mainList = new List<int> { 1, 5, 3, 6, 5, 6, 7, 8, 2, 10, 23, 24, 94, 195, 1110, 1112};
         }
 
         public string turnToString(List<int> inList)
@@ -41,27 +41,57 @@ namespace LearningWPF
             return add;
         }
 
-        public string FilterListOddNumbers(List<int> inList)
+        public List<int> FilterListOddNumbers(List<int> inList)
         {
-            return turnToString(inList.Where(i => (i % 2) != 0).ToList());
+            return (inList.Where(i => (i % 2) != 0).ToList());
         }
-        public string FilterListEvenNumbers(List<int> inList)
+        public List<int> FilterListEvenNumbers(List<int> inList)
         {
-            return turnToString(inList.Where(i => (i % 2) == 0).ToList());
+            return (inList.Where(i => (i % 2) == 0).ToList());
         }
 
         private void Even_Click(object sender, RoutedEventArgs e)
         {
-            mainTextBlock.Text = FilterListEvenNumbers(mainList);
+            mainList = FilterListEvenNumbers(mainList);
+
+            mainTextBlock.Text = turnToString(mainList);
         }
 
         private void Odd_Click(object sender, RoutedEventArgs e)
         {
-            mainTextBlock.Text = FilterListOddNumbers(mainList);
+            mainList = FilterListOddNumbers(mainList);
+
+            mainTextBlock.Text = turnToString(mainList);
         }
 
         private void RemoveFilter_Click(object sender, RoutedEventArgs e)
         {
+            mainList = new List<int> { 1, 5, 3, 6, 5, 6, 7, 8, 2, 10, 23, 24, 94, 195, 1110, 1112 };
+
+            mainTextBlock.Text = turnToString(mainList);
+        }
+
+        public List<int> SortAscending(List<int> inList)
+        {
+            return mainList.OrderBy(i => i).ToList();
+        }
+
+        public List<int> SortDescending(List<int> inList)
+        {
+            return mainList.OrderByDescending(i => i).ToList();
+        }
+
+        private void Ascend_Click(object sender, RoutedEventArgs e)
+        {
+            mainList = SortAscending(mainList);
+
+            mainTextBlock.Text = turnToString(mainList);
+        }
+
+        private void Descend_Click(object sender, RoutedEventArgs e)
+        {
+            mainList = SortDescending(mainList);
+
             mainTextBlock.Text = turnToString(mainList);
         }
     }

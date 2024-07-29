@@ -12,7 +12,9 @@
         <StackPanel Orientation="Horizontal">
             <Button FontSize="20" Click="Even_Click" Margin="5,0,10,0" Name="Even">Show Even Numbers</Button>
             <Button FontSize="20" Click="Odd_Click" Margin="5,0,10,0" Name="Odd">Show Odd Numbers</Button>
-            <Button FontSize="20" Click="RemoveFilter_Click" Margin="5,0,0,0" Name="RemoveFilter">Remove Filter</Button>
+            <Button FontSize="20" Click="RemoveFilter_Click" Margin="5,0,10,0" Name="RemoveFilter">Remove Filter</Button>
+            <Button FontSize="20" Click="Ascend_Click" Margin="5,0,10,0" Name="Ascend">Ascend</Button>
+            <Button FontSize="20" Click="Descend_Click" Margin="5,0,0,0" Name="Descend">Descend</Button>
         </StackPanel>
         <TextBlock 
             x:Name="mainTextBlock"

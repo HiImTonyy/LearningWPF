@@ -96,7 +96,7 @@ namespace LearningWPF
                     mainText.Text = "Instead of using XAML, the animations will be played using CSharp.";
                     break;
                 case "Button22":
-                    mainText.Text = ":)";
+                    mainText.Text = "Learned a bit of linq to sort through numbers based on even numbers, odd numbers, or descending and ascending numbers.";
                     break;
             }
         }
