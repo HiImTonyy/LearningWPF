@@ -186,6 +186,14 @@
             FontWeight="Bold"
             Canvas.Top="294"
             Canvas.Left="264" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
+            x:Name="Button22"
+            Height="35"
+            Width="163"
+            Content="22. LINQ"
+            FontWeight="Bold"
+            Canvas.Top="338"
+            Canvas.Left="264"/>
 
         <TextBlock 
             x:Name="mainText"
