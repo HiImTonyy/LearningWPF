@@ -73,11 +73,17 @@
     <Compile Include="Button22_Linq.xaml.cs">
       <DependentUpon>Button22_Linq.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Button23_userControls.xaml.cs">
+      <DependentUpon>Button23_userControls.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageNavigationPages\Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageNavigationPages\Page2.xaml.cs">
       <DependentUpon>Page2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PostOperationsUC.xaml.cs">
+      <DependentUpon>PostOperationsUC.xaml</DependentUpon>
     </Compile>
     <Compile Include="Rarity.cs" />
     <Compile Include="ValueUC.xaml.cs">
@@ -138,6 +144,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Button22_Linq.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Button23_userControls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -241,6 +251,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PostOperationsUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ValueUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -271,6 +285,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\bookmark.png" />
+    <Resource Include="Icons\comment.png" />
+    <Resource Include="Icons\emptyheart.png" />
+    <Resource Include="Icons\fillheart.png" />
+    <Resource Include="Icons\pic1.jpg" />
+    <Resource Include="Icons\pic2.jpg" />
+    <Resource Include="Icons\pic3.jpg" />
+    <Resource Include="Icons\send.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
