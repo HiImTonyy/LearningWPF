@@ -82,6 +82,9 @@
     <Compile Include="PageNavigationPages\Page2.xaml.cs">
       <DependentUpon>Page2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PostLikedBy.xaml.cs">
+      <DependentUpon>PostLikedBy.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PostOperationsUC.xaml.cs">
       <DependentUpon>PostOperationsUC.xaml</DependentUpon>
     </Compile>
@@ -248,6 +251,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageNavigationPages\Page2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PostLikedBy.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

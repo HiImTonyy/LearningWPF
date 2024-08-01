@@ -10,5 +10,6 @@
         ResizeMode="NoResize">
     <Grid>
         <local:PostOperationsUC Height="40"></local:PostOperationsUC>
+        <local:PostLikedBy></local:PostLikedBy>
     </Grid>
 </Window>
