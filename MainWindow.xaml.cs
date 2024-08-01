@@ -205,10 +205,6 @@ namespace LearningWPF
                     Button22_Linq Button22_Linq = new Button22_Linq();
                     Button22_Linq.ShowDialog();
                     break;
-                case "Button23":
-                    Button23_userControls Button23_userControls = new Button23_userControls();
-                    Button23_userControls.ShowDialog();
-                    break;
             }
         }
     }
