@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LearningWPF.MISCFOLDER;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -98,7 +99,7 @@ namespace LearningWPF
                 case "Button22":
                     mainText.Text = "Learned a bit of linq to sort through numbers based on even numbers, odd numbers, or descending and ascending numbers.";
                     break;
-                case "Button23":
+                case "ButtonMisc1":
                     mainText.Text = "???";
                     break;
             }
@@ -204,6 +205,9 @@ namespace LearningWPF
                 case "Button22":
                     Button22_Linq Button22_Linq = new Button22_Linq();
                     Button22_Linq.ShowDialog();
+                    break;
+                case "ButtonMisc1":
+                    Human Bozo = new Human();
                     break;
             }
         }

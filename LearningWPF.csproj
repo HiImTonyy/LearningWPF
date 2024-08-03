@@ -73,6 +73,7 @@
     <Compile Include="Button22_Linq.xaml.cs">
       <DependentUpon>Button22_Linq.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MISCFOLDER\Human.cs" />
     <Compile Include="PageNavigationPages\Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>

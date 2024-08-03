@@ -194,6 +194,22 @@
             FontWeight="Bold"
             Canvas.Top="338"
             Canvas.Left="264"/>
+        <TextBlock
+            FontWeight="Bold"
+            FontSize="29"
+            Foreground="Orange"
+            TextDecorations="Underline"
+            Text="MISC"
+            Canvas.Right="65">
+        </TextBlock>
+        <Button MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Click="Button_Click"
+      x:Name="ButtonMisc1"
+      Height="35"
+      Width="95"
+      Content="Construct Test"
+      FontWeight="Bold"
+      Canvas.Right="55"
+      Canvas.Top="50"/>
 
         <TextBlock 
             x:Name="mainText"
