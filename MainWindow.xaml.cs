@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Authentication;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -207,7 +208,8 @@ namespace LearningWPF
                     Button22_Linq.ShowDialog();
                     break;
                 case "ButtonMisc1":
-                    Human Bozo = new Human();
+                    MiscButton1 MiscButton1 = new MiscButton1();
+                    MiscButton1.ShowDialog();
                     break;
             }
         }
